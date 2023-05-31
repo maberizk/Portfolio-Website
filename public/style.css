@@ -1,0 +1,201 @@
+body {
+    margin: 0;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+}
+
+/* home page  */
+
+.backgroundImg {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: .5px solid black;
+}
+
+.navLeft {
+    padding: 0 1rem;
+    letter-spacing: .3rem;
+}
+
+.navRight {
+    display: flex;
+    letter-spacing: .3rem;
+}
+
+.navLinks {
+    text-decoration: none;
+    padding: 0 1rem;
+    color: black;
+}
+
+.homeAbout {
+    font-size: 2rem;
+    text-align: center;
+    letter-spacing: .3rem;
+}
+
+.footer {
+    position: fixed;
+    text-align: center;
+    line-height: 0.5;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    border-top: .5px solid rgb(235, 227, 227);
+    letter-spacing: .3rem;
+}
+
+.animationContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh
+}
+
+
+.animateText {
+    font-weight: 200;
+    font-size: 1.8em;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+}
+
+.animateText .letter {
+    display: inline-block;
+    line-height: 1em;
+}
+
+/* about page  */
+
+.about {
+    background-color: rgb(4, 79, 98);
+}
+
+.nav2 {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: .5px solid antiquewhite;
+    color: antiquewhite;
+}
+
+.navLinks2 {
+    text-decoration: none;
+    padding: 0 1rem;
+    color: antiquewhite;
+}
+
+.michelleImg {
+    width: 30%;
+    float: left;
+    padding: 0 16px 0 16px;
+}
+
+.aboutText {
+    width: 70%;
+    color: antiquewhite
+}
+
+.footer2 {
+    position: fixed;
+    text-align: center;
+    line-height: 0.5;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: antiquewhite;
+    border-top: .5px solid antiquewhite;
+    letter-spacing: .3rem;
+}
+
+.icon {
+    color: antiquewhite;
+    padding: 0 8px 0 0;
+}
+
+.project {
+    width: 33.33%;
+    height: 630px;
+    object-fit: cover;
+    float: left;
+    padding: 0;
+}
+
+.labeled {
+    display: flex;
+    flex-direction: column;
+}
+
+.project:hover {
+    opacity: .5;
+}
+
+
+/* project page  */
+
+.projectPage {
+    color: antiquewhite;
+    text-align: center;
+}
+
+/* responsive web  */
+
+@media screen and (max-width: 700px) {
+
+    .nav2,
+    .navRight,
+    .nav,
+    .navRight {
+        flex-direction: column;
+        font-size: small;
+        line-height: .3rem;
+    }
+
+    .footer,
+    .footer2 {
+        font-size: smaller;
+    }
+
+    .backgroundImg {
+        object-fit: cover;
+    }
+
+    .portfolioProjects {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .project {
+        width: 100%;
+        height: 400px;
+        padding: 0;
+    }
+
+    .aboutText {
+        width: 100%;
+    }
+
+    .aboutContainer {
+        margin: 16px;
+    }
+
+    .michelleImg {
+        width: 40%;
+        float: left;
+        padding: 16px;
+    }
+
+    .homeAbout {
+        margin: 16px;
+    }
+
+
+}
