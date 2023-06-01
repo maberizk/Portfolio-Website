@@ -6,7 +6,6 @@ body {
 }
 
 /* home page  */
-
 .backgroundImg {
     height: 100%;
     width: 100%;
@@ -50,13 +49,34 @@ body {
     letter-spacing: .3rem;
 }
 
-
 .homeAbout {
     font-size: 2rem;
     text-align: center;
     letter-spacing: .3rem;
 }
 
+/* animated text  */
+.animationContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh
+}
+
+.animateText {
+    font-weight: 200;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+    width: 50%;
+}
+
+.animateText .letter {
+    display: inline-block;
+    line-height: 1em;
+}
+
+/* footer  */
 .footer {
     position: fixed;
     text-align: center;
@@ -82,29 +102,8 @@ body {
     background-color: rgb(4, 79, 98);
 }
 
-.animationContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50vh
-}
-
-
-.animateText {
-    font-weight: 200;
-    font-size: 2.5em;
-    text-transform: uppercase;
-    letter-spacing: 0.5em;
-    width: 50%;
-}
-
-.animateText .letter {
-    display: inline-block;
-    line-height: 1em;
-}
 
 /* about page  */
-
 .about,
 .portfolio {
     background-color: rgb(4, 79, 98);
@@ -124,14 +123,12 @@ body {
     width: 60%
 }
 
-
 .michelleImgContainer {
     width: 40%;
     position: absolute;
     top: 6%;
     right: 3%
 }
-
 
 .michelleImg {
     max-width: auto;
@@ -168,12 +165,10 @@ body {
     color: antiquewhite
 }
 
-
 .icon {
     color: antiquewhite;
     padding: 0 8px 0 0;
 }
-
 
 /* portfolio page */
 
@@ -202,7 +197,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 83%
+    height: 8%
 }
 
 .imageText {
@@ -211,7 +206,6 @@ body {
     padding: 0;
     margin: 0;
 }
-
 
 /* project page  */
 

@@ -9,9 +9,7 @@ import oceanImg from "../../public/images/Ocean.jpg";
 
 const Homepage = () => {
 
-
     useEffect(() => {
-
         let div = document.querySelector(".animateText")
         // turning each letter into its own span
         div.innerHTML = div.textContent.replace(/(\S)/g, "<span class='letter' style='display: inline-block'>$1</span>");
@@ -33,7 +31,6 @@ const Homepage = () => {
                 duration: 1100,
                 delay: (el, i) => 100 + 30 * i
             });
-
     }, []);
 
     return (
@@ -49,6 +46,5 @@ const Homepage = () => {
         </div>
     )
 }
-
 
 export default Homepage;

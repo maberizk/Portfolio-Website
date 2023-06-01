@@ -5,9 +5,7 @@ import Main from "./components/Main";
 import { BrowserRouter as Router } from "react-router-dom";
 import { Route, Routes } from "react-router-dom";
 
-
 const root = createRoot(document.getElementById("app"));
-
 
 root.render(
     <Router basename="/">
@@ -16,11 +14,3 @@ root.render(
         </Routes>
     </Router>
 )
-
-// const App = () => {
-
-//     return <Homepage />
-// }
-
-
-// root.render(<App />);
