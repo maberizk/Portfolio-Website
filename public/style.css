@@ -1,3 +1,7 @@
+/* * {
+    background-color: rgb(4, 79, 98);
+} */
+
 body {
     margin: 0;
     height: 100%;
@@ -51,8 +55,8 @@ body {
     bottom: 0;
     left: 0;
     width: 100%;
-    color: white;
-    border-top: .5px solid rgb(235, 227, 227);
+    color: antiquewhite;
+    border-top: .5px solid antiquewhite;
     letter-spacing: .3rem;
 }
 
@@ -78,8 +82,48 @@ body {
 
 /* about page  */
 
-.about {
+.about,
+.portfolio {
     background-color: rgb(4, 79, 98);
+    height: 140vh;
+}
+
+.aboutContainer {
+    display: flex;
+    /* justify-content: center; */
+    max-height: 100%;
+    padding-bottom: 20px;
+    /* min-height: 100vh; */
+}
+
+.flexAbout {
+    padding-left: 2%;
+    width: 60%
+}
+
+
+.michelleImgContainer {
+    width: 40%;
+    position: absolute;
+    top: 5%;
+    right: 2%
+}
+
+
+.michelleImg {
+    max-width: auto;
+    height: 70%;
+    padding: 0 16px;
+}
+
+.hiText {
+    font-weight: 200;
+    font-size: 5em;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+    color: antiquewhite;
+    /* text-align: center; */
+    margin: 2%
 }
 
 .nav2 {
@@ -95,14 +139,11 @@ body {
     color: antiquewhite;
 }
 
-.michelleImg {
-    width: 30%;
-    float: left;
-    padding: 0 16px 0 16px;
-}
+
 
 .aboutText {
-    width: 70%;
+    width: 80%;
+    font-size: 2rem;
     color: antiquewhite
 }
 
