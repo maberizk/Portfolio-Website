@@ -1,16 +1,26 @@
-import ReactDOM from "react-dom";
-import React, { useEffect, useRef } from "react";
+
+import React from "react";
 import { createRoot } from "react-dom/client";
-import Homepage from "./components/Homepage";
+import Main from "./components/Main";
+import { BrowserRouter as Router } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 
 
 const root = createRoot(document.getElementById("app"));
 
 
-const App = () => {
+root.render(
+    <Router basename="/">
+        <Routes>
+            <Route path="*" element={<Main />} />
+        </Routes>
+    </Router>
+)
 
-    return <Homepage />
-}
+// const App = () => {
+
+//     return <Homepage />
+// }
 
 
-root.render(<App />);
+// root.render(<App />);
