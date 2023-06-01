@@ -20,11 +20,19 @@ body {
     font-weight: 100;
 }
 
+.link:hover {
+    color: rgb(17, 34, 231);
+}
+
 .linkWhite {
     color: antiquewhite;
     text-decoration: none;
     padding: 0 1rem;
     font-weight: 100;
+}
+
+.linkWhite:hover {
+    color: rgb(225, 154, 23)
 }
 
 .nav {
@@ -112,10 +120,8 @@ body {
 
 .aboutContainer {
     display: flex;
-    /* justify-content: center; */
     max-height: 100%;
     padding-bottom: 20px;
-    /* min-height: 100vh; */
 }
 
 .flexAbout {
@@ -197,7 +203,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 8%
+    height: 81.5%
 }
 
 .imageText {

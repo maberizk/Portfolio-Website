@@ -1,6 +1,4 @@
 import React from "react";
-import Portfolio from "./Portfolio";
-import Main from "./Main";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 

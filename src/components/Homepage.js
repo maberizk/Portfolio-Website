@@ -14,24 +14,47 @@ const Homepage = () => {
         // turning each letter into its own span
         div.innerHTML = div.textContent.replace(/(\S)/g, "<span class='letter' style='display: inline-block'>$1</span>");
 
+        // vertical movement 
         anime.timeline({ loop: true })
             .add({
                 targets: '.animateText .letter',
-                translateX: [60, 0],
+                translateY: [100, 0],
                 translateZ: 0,
                 opacity: [0, 1],
                 easing: "easeOutExpo",
-                duration: 1400,
-                delay: (el, i) => 500 + 30 * i
+                duration: 1600,
+                delay: (el, i) => 300 + 30 * i
             }).add({
                 targets: '.animateText .letter',
-                translateX: [0, -30],
+                translateY: [0, -100],
                 opacity: [1, 0],
                 easing: "easeInExpo",
-                duration: 1100,
+                duration: 1400,
                 delay: (el, i) => 100 + 30 * i
             });
-    }, []);
+    }, [])
+
+    // horizontal movement 
+
+    //     anime.timeline({ loop: true })
+    //         .add({
+    //             targets: '.animateText .letter',
+    //             translateX: [60, 0],
+    //             translateZ: 0,
+    //             opacity: [0, 1],
+    //             easing: "easeOutExpo",
+    //             duration: 1400,
+    //             delay: (el, i) => 500 + 30 * i
+    //         }).add({
+    //             targets: '.animateText .letter',
+    //             translateX: [0, -30],
+    //             opacity: [1, 0],
+    //             easing: "easeInExpo",
+    //             duration: 1100,
+    //             delay: (el, i) => 100 + 30 * i
+    //         });
+    // }, []);
+
 
     return (
         <div>
