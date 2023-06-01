@@ -1,8 +1,6 @@
 import React from 'react'
 import Navbar from './Navbar'
 import Footer from './Footer'
-
-import michelleImg from '../../public/images/michelleImg.png'
 import michelleNoBG from '../../public/images/michelleBW.png'
 
 export default function About() {

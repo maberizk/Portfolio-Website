@@ -18,10 +18,32 @@ body {
     z-index: -1;
 }
 
+.link {
+    color: black;
+    text-decoration: none;
+    padding: 0 1rem;
+    font-weight: 100;
+}
+
+.linkWhite {
+    color: antiquewhite;
+    text-decoration: none;
+    padding: 0 1rem;
+    font-weight: 100;
+}
+
 .nav {
     display: flex;
     justify-content: space-between;
     border-bottom: .5px solid black;
+    /* color: black; */
+}
+
+.navWhite {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: .5px solid antiquewhite;
+    /* color: antiquewhite; */
 }
 
 .navLeft {
@@ -32,13 +54,6 @@ body {
 .navRight {
     display: flex;
     letter-spacing: .3rem;
-}
-
-.navLinks {
-    text-decoration: none;
-    padding: 0 1rem;
-    font-weight: 100;
-    color: black;
 }
 
 
@@ -122,7 +137,6 @@ body {
     text-transform: uppercase;
     letter-spacing: 0.5em;
     color: antiquewhite;
-    /* text-align: center; */
     margin: 2%
 }
 
@@ -140,14 +154,13 @@ body {
 }
 
 
-
 .aboutText {
     width: 80%;
     font-size: 2rem;
     color: antiquewhite
 }
 
-.footer2 {
+/* .footer2 {
     position: fixed;
     text-align: center;
     line-height: 0.5;
@@ -157,7 +170,7 @@ body {
     color: antiquewhite;
     border-top: .5px solid antiquewhite;
     letter-spacing: .3rem;
-}
+} */
 
 .icon {
     color: antiquewhite;
