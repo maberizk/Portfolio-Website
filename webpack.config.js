@@ -1,11 +1,19 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const htmlPlugin = new HtmlWebPackPlugin({
-    template: "./src/index.html",
+    template: "./public/index.html",
     filename: "./index.html"
 });
 
 module.exports = {
+    entry: ["./src/index.js"],
+    output: {
+        path: __dirname + '/public',
+        filename: 'bundle.js',
+        publicPath: '/',
+    },
     mode: "development",
+    devtool: "source-map",
+    context: __dirname,
     module: {
         rules: [
             {
@@ -31,8 +39,12 @@ module.exports = {
             {
                 test: /\.css$/,
                 use: ["style-loader", "css-loader"]
-            }
+            },
+
         ]
+    },
+    devServer: {
+        historyApiFallback: true,
     },
     plugins: [htmlPlugin]
 };
