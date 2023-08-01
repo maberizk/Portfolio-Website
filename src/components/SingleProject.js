@@ -12,7 +12,7 @@ export default function SingleProject() {
         <div className="portfolio">
             <Navbar />
             <div>
-                <h1>{projects[projectId.id].title}</h1>
+                <h1>{projects[projectId.id - 1].title}</h1>
                 <p></p>
             </div>
             <Footer />
