@@ -70,43 +70,76 @@
 //     );
 // }
 
-import React from 'react'
-import Navbar from './Navbar'
-import Footer from './Footer'
-import { useState } from 'react'
-import { projects } from "../data"
+// import React from 'react'
+// import Navbar from './Navbar'
+// import Footer from './Footer'
+// import { useState } from 'react'
+// import { projects } from "../data"
+
+// export default function Portfolio() {
+//     const [hoveredProject, setHoveredProject] = useState(null);
+
+//     const handleMouseOver = (projectId) => {
+//         setHoveredProject(projectId);
+//     };
+
+//     const handleMouseOut = () => {
+//         setHoveredProject(null);
+//     };
+
+
+//     return (
+//         <div className="portfolio">
+//             <Navbar />
+//             <div className="projectContainer">
+//                 {projects.map((project) => (
+//                     <a
+//                         href={project.link}
+//                         key={project.title}>
+
+//                         <img
+//                             alt="gallery"
+//                             className='projectImg'
+//                             src={project.image}
+//                         />
+//                         {/* <h3>{project.title}</h3>
+//                             <p>{project.description}</p> */}
+
+//                     </a>
+//                 ))}
+
+//             </div>
+//             <Footer />
+//         </div>
+//     );
+// }
+import React, { useState } from 'react';
+import Navbar from './Navbar';
+import Footer from './Footer';
+import { projects } from "../data";
+import { NavLink } from 'react-router-dom';
 
 export default function Portfolio() {
-    const [hoveredProject, setHoveredProject] = useState(null);
-
-    const handleMouseOver = (projectId) => {
-        setHoveredProject(projectId);
-    };
-
-    const handleMouseOut = () => {
-        setHoveredProject(null);
-    };
 
     return (
         <div className="portfolio">
             <Navbar />
-            <div>
+            <div className="portfolioProjects">
                 {projects.map((project) => (
-                    <a
-                        href={project.link}
-                        key={project.title}>
-                        <div>
-                            <img
-                                alt="gallery"
-                                src={project.image}
-                            />
-                            {console.log(project.image)}
-                            <h3>{project.title}</h3>
-                            <p>{project.description}</p>
-                        </div>
-                    </a>
+                    // <div
+                    //     key={project.id}
+                    //     className="projectContainer"
+                    // >
+                    <NavLink to={`/portfolio/${project.id}`} className="product">
+                        <img
+                            src={project.image}
+                            className="project"
+                            alt={project.title}
+                            key={project.id}
+                        />
+                    </NavLink>
+                    // </div>
                 ))}
-
             </div>
             <Footer />
         </div>

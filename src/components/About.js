@@ -20,6 +20,8 @@ export default function About() {
                             className="fa fa-linkedin-square" style={{ fontSize: "32px" }}></i></a>
                         <a href="https://www.pinterest.com/meesh129/" className="icon"><i className="fa fa-pinterest"
                             style={{ fontSize: "32px" }}></i></a>
+                        <a href="https://github.com/maberizk" className="icon"><i className="fa fa-github"
+                            style={{ fontSize: "32px" }}></i></a>
                     </div>
                 </div>
                 <div className="michelleImgContainer">
