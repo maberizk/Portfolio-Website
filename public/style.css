@@ -68,7 +68,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50vh
+    height: 50vh;
+    width: 100%;
+    max-width: 10000px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .animateText {
@@ -76,7 +80,7 @@ body {
     font-size: 2.5em;
     text-transform: uppercase;
     letter-spacing: 0.5em;
-    width: 50%;
+    width: 80%;
 }
 
 .animateText .letter {
@@ -235,7 +239,7 @@ body {
     flex-wrap: wrap;
 } */
 
-.portfolio{
+.portfolio {
     width: 100%;
 }
 
