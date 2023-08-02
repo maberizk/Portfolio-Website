@@ -18,11 +18,11 @@ export default function About() {
                         <p>When I'm not coding, you can find me thrifting, sewing, soaking up inspiration in nature and museums, or doing yoga. </p>
                     </div>
                     <div className="socialIcons">
-                        <a href="https://www.linkedin.com/in/michelle-aberizk-99148624/" className="icon"><i
+                        <a href="https://www.linkedin.com/in/michelle-aberizk-99148624/" target="_blank" className="icon"><i
                             className="fa fa-linkedin-square" style={{ fontSize: "32px" }}></i></a>
-                        <a href="https://www.pinterest.com/meesh129/" className="icon"><i className="fa fa-pinterest"
+                        <a href="https://www.pinterest.com/meesh129/" className="icon"><i className="fa fa-pinterest" target="_blank"
                             style={{ fontSize: "32px" }}></i></a>
-                        <a href="https://github.com/maberizk" className="icon"><i className="fa fa-github"
+                        <a href="https://github.com/maberizk" target="_blank" className="icon"><i className="fa fa-github"
                             style={{ fontSize: "32px" }}></i></a>
                     </div>
                 </div>
