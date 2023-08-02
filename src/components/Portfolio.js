@@ -113,95 +113,35 @@
 //         </div>
 //     );
 // // }
-// import React, { useState } from 'react';
-// import Navbar from './Navbar';
-// import Footer from './Footer';
-// import { projects } from "../data";
-// import { NavLink } from 'react-router-dom';
-
-// export default function Portfolio() {
-
-//     return (
-//         <div className="portfolio">
-//             <Navbar />
-//             <div className="portfolioProjects">
-//                 {projects.map((project) => (
-//                     // <div
-//                     //     key={project.id}
-//                     //     className="projectContainer"
-//                     // >
-//                     <NavLink to={`/portfolio/${project.id}`} className="product">
-//                         <img
-//                             src={project.image}
-//                             className="project"
-//                             alt={project.title}
-//                             key={project.id}
-//                         />
-//                     </NavLink>
-//                     // </div>
-//                 ))}
-//             </div>
-//             <Footer />
-//         </div>
-//     );
-// }
-
-import React from 'react'
-import Navbar from './Navbar'
-import Footer from './Footer'
-import { useState } from 'react'
-import { projects } from "../data"
-import { Container, Row, Col, Tab, Nav } from 'react-bootstrap'
+import React, { useState } from 'react';
+import Navbar from './Navbar';
+import Footer from './Footer';
+import { projects } from "../data";
+import { NavLink } from 'react-router-dom';
 
 export default function Portfolio() {
-    return (
-        <div>
-            <Navbar />
-            <section className='project' id="project">
-                <Container>
-                    <Row>
-                        <Col>
-                            <h2>Projects</h2>
-                            <Tab.Container id="projects-tabs" defaultActiveKey="first">
-                                <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
-                                    <Nav.Item>
-                                        <Nav.Link eventKey="first">Frontend Development</Nav.Link>
-                                    </Nav.Item>
-                                    <Nav.Item>
-                                        <Nav.Link eventKey="second">UX UI Design</Nav.Link>
-                                    </Nav.Item>
-                                    <Nav.Item>
-                                        <Nav.Link eventKey="third">Interior Design</Nav.Link>
-                                    </Nav.Item>
-                                </Nav>
-                                <Tab.Content>
-                                    <Tab.Pane eventKey="first">
-                                        <Row>
-                                            {/* {
-                                                projects.map((project, index) => {
-                                                    return (
-                                                        <ProjectCard
-                                                            key={index}
-                                                            {...project}
-                                                        />
-                                                    )
-                                                })
-                                            } */}
-                                        </Row>
-                                    </Tab.Pane>
-                                    <Tab.Pane eventKey="section">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
-                                    </Tab.Pane>
-                                    <Tab.Pane eventKey="third">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
-                                    </Tab.Pane>
-                                </Tab.Content>
-                            </Tab.Container>
-                        </Col>
-                    </Row>
-                </Container>
-            </section>
 
+    return (
+        <div className="portfolio">
+            <Navbar />
+            <div className="portfolioProjects">
+                {projects.map((project) => (
+
+                    <NavLink to={`/portfolio/${project.id}`} className="projectCard">
+                        <img
+                            src={project.image}
+                            className="project_image"
+                            alt={project.title}
+                            key={project.id}
+                        />
+                        <div className="image_overlay">
+                            <h3 class="image_title">{project.title}</h3>
+                            <p class="image_description">{project.description}</p>
+                        </div>
+                    </NavLink>
+                ))}
+            </div>
+            <Footer />
         </div>
-    )
+    );
 }
