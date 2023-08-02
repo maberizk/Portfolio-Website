@@ -21,8 +21,9 @@ body {
     font-weight: 100;
 }
 
-.link:hover {
-    color: rgb(17, 34, 231);
+.link:hover,
+.linkWhite:hover {
+    font-weight: 400;
 }
 
 .linkWhite {
@@ -32,9 +33,6 @@ body {
     font-weight: 100;
 }
 
-.linkWhite:hover {
-    color: rgb(225, 154, 23)
-}
 
 .nav {
     display: flex;
@@ -56,6 +54,19 @@ body {
 .navRight {
     display: flex;
     letter-spacing: .3rem;
+}
+
+.nav2 {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: .5px solid antiquewhite;
+    color: antiquewhite;
+}
+
+.navLinks2 {
+    text-decoration: none;
+    padding: 0 1rem;
+    color: antiquewhite;
 }
 
 .homeAbout {
@@ -117,16 +128,9 @@ body {
 
 
 /* about page  */
-.about,
-.portfolio {
-    background-color: rgb(4, 79, 98);
-    height: 140vh;
-}
 
 .aboutContainer {
     display: flex;
-    max-height: 100%;
-    padding-bottom: 20px;
 }
 
 .flexAbout {
@@ -134,20 +138,18 @@ body {
     width: 60%
 }
 
-.michelleImgContainer {
-    width: 40%;
-    position: absolute;
-    top: 6%;
-    right: 3%
-}
-
 .michelleImg {
-    max-width: auto;
-    height: 70%;
-    padding: 0 16px;
+    width: auto;
+    height: 650px;
+    object-fit: cover;
+    transition: all 1s;
 }
 
-.hiText {
+.michelleImg:hover {
+    transform: scale(1.1);
+}
+
+.aboutHeader {
     font-weight: 200;
     font-size: 4.5em;
     text-transform: uppercase;
@@ -156,24 +158,12 @@ body {
     margin: 2% 2% 0 2%;
 }
 
-.nav2 {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: .5px solid antiquewhite;
-    color: antiquewhite;
-}
-
-.navLinks2 {
-    text-decoration: none;
-    padding: 0 1rem;
-    color: antiquewhite;
-}
-
-
 .aboutText {
     width: 80%;
     font-size: 1.5rem;
-    color: antiquewhite
+    font-weight: 200;
+    color: antiquewhite;
+    line-height: 1.4em;
 }
 
 .icon {
@@ -181,64 +171,7 @@ body {
     padding: 0 8px 0 0;
 }
 
-/* portfolio page
-
-/* .portfolioProjects {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-}
-
-.projectContainer {
-    position: relative;
-} */
-
-/* .portfolioProjects {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.projectContainer {
-    position: relative;
-}
-
-.projectContainer img {
-    display: block;
-    width: 100%;
-    height: 85%;
-    object-fit: cover;
-}
-
-.projectContainer .imageText {
-    position: absolute;
-    inset: 0;
-    font-size: 2rem;
-    padding: 1rem;
-    background: rgba(255, 255, 255, 0.9);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 81.5%
-} */
-
-/* .projectImg {
-    width: 100%
-} */
-
-/* .imageText {
-    text-align: center;
-    text-transform: uppercase;
-    padding: 0;
-    margin: 0;
-}
-
-.projectContainer2 {
-    display: flex;
-    flex-direction: row;
-    width: 33%;
-    height: 300;
-    flex-wrap: wrap;
-} */
+/* portfolio page */
 
 .portfolio {
     width: 100%;
@@ -253,14 +186,7 @@ body {
     max-width: 1500px;
     text-align: center;
     margin: 0 auto;
-
 }
-
-/* .portfolioProjects img {
-    width: 450px;
-    height: 600px;
-    object-fit: fill;
-} */
 
 .projectCard {
     position: relative;
@@ -273,7 +199,6 @@ body {
     display: block;
     width: 100%;
     height: 100%;
-    /* object-fit: fill; */
 }
 
 .image_overlay {

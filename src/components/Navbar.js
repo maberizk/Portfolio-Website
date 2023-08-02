@@ -7,7 +7,7 @@ const Navbar = () => {
     const isHomepage = location.pathname === "/";
 
     return (
-        <nav className={isHomepage ? "nav" : "navWhite"}>
+        <nav data-aos="fade-down" className={isHomepage ? "nav" : "navWhite"}>
             <div className="navLeft">
                 <h1><Link to="/"
                     className={`${isHomepage ? "link" : "linkWhite"}`}
