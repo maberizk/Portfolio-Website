@@ -1,6 +1,3 @@
-import neighborlyHome from '../public/images/neighborlyHome.jpg'
-import seasonsBloom from '../public/images/seasonsBloom.png'
-import powderBath from '../public/images/powderBath.jpeg'
 
 export const projects = [
     {
@@ -16,16 +13,39 @@ export const projects = [
         image: '/images/seasonsBloom.png'
     },
     {
-        title: "Interior Design",
+        title: "Matters of Space",
         id: 3,
-        description: "Residential and Commercial",
-        image: '/images/powderBath.jpeg'
+        description: "Interior Design",
+        image: '/images/Mos_Bonita2.jpg',
+        images: [
+            "/images/Mos/Bonita1.jpg",
+            "/images/Mos/Bonita2.jpg",
+            "/images/Mos/Bonita3.png",
+            "/images/Mos/Bonita4.png",
+            "/images/Mos/Bonita5.jpg",
+            "/images/Mos/Bonita6.jpg",
+            "/images/Mos/Bonita7.png",
+            "/images/Mos/Bonita8.jpg",
+            "/images/Mos/Bonita9.png",
+            "/images/Mos/Oxy1.jpg",
+            "/images/Mos/Oxy2.jpg",
+            "/images/Mos/Oxy3.png",
+            "/images/Mos/Lowry1.jpeg",
+            "/images/Mos/Lowry2.jpeg"
+
+        ]
     },
     {
-        title: "Interior Design",
+        title: "Aberizk Store",
         id: 4,
-        description: "Residential and Commercial",
-        image: '/images/powderBath.jpeg'
+        description: "Interior Design",
+        image: '/images/Aberizk_2.jpeg',
+        images: [
+            '/images/Aberizk_1.jpeg',
+            '/images/Aberizk_2.jpeg',
+            '/images/Aberizk_3.jpeg',
+            '/images/Aberizk_4.jpeg'
+        ]
     },
     {
         title: "Interior Design",
