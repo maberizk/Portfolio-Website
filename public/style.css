@@ -76,6 +76,7 @@ body {
 }
 
 /* animated text  */
+
 .animationContainer {
     display: flex;
     justify-content: center;
@@ -101,6 +102,7 @@ body {
 }
 
 /* footer  */
+
 .footer {
     position: fixed;
     text-align: center;
@@ -127,6 +129,9 @@ body {
     font-weight: 200;
 }
 
+.socialIcons{
+    padding-bottom: 1%;
+}
 
 /* about page  */
 
