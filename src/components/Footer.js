@@ -7,8 +7,17 @@ export default function Footer() {
 
     return (
         <div className={isHomepage ? "footer" : "footerColor"}>
-            <p>michelle.aberizk@gmail.com</p>
-            <p>619.884.8142</p>
+            <div>
+                <p>michelle.aberizk@gmail.com</p>
+            </div>
+            <div className="socialIcons">
+                        <a href="https://www.linkedin.com/in/michelle-aberizk-99148624/" target="_blank" className="icon"><i
+                            className="fa fa-linkedin-square" style={{ fontSize: "32px" }}></i></a>
+                        <a href="https://www.pinterest.com/meesh129/" className="icon"><i className="fa fa-pinterest" target="_blank"
+                            style={{ fontSize: "32px" }}></i></a>
+                        <a href="https://github.com/maberizk" target="_blank" className="icon"><i className="fa fa-github"
+                            style={{ fontSize: "32px" }}></i></a>
+                    </div>
         </div>
     )
 }

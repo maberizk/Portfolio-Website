@@ -6,14 +6,30 @@ import { NavLink, useParams } from 'react-router-dom';
 
 
 export default function SingleProject() {
-    const projectId = useParams();
-    console.log(projectId)
+    const { id } = useParams(); // Make sure to use the correct property name, 'id'.
+
+    const project = projects.find((project) => project.id === parseInt(id));
+
+    if (!project) {
+        return <div>Project not found</div>;
+    }
+
     return (
-        <div className="portfolio">
+        <div className="projectPage">
             <Navbar />
             <div>
-                <h1>{projects[projectId.id].title}</h1>
-                <p></p>
+                <h1>{project.title}</h1>
+                <p>{project.description}</p>
+                <div className="singleProject">
+                    {project.images.map((image, index) => (
+                        <img
+                            key={index}
+                            src={image}
+                            className="singleProject_images"
+                            alt={`${project.title} - Image ${index + 1}`}
+                        />
+                    ))}
+                </div>
             </div>
             <Footer />
         </div>

@@ -8,23 +8,25 @@ export default function About() {
         <div className="about">
             <Navbar />
 
-            <h3 className="hiText">Hi, I'm Michelle</h3>
+            <h3 data-aos="fade-right" className="aboutHeader">Hi, I'm Michelle</h3>
 
             <div className="aboutContainer">
-                <div className="flexAbout">
+                <div data-aos="fade-right" className="flexAbout">
                     <div className="aboutText">
-                        <p>From shaping spaces to crafting code, I am a passionate software developer with a background in interior design. As an interior designer, I honed my problem-solving skills, attention to detail and user-centric approach. However, I increasingly realized that the design challenges I encountered could be addressed in a more dynamic and scalable way through technology. I thrive on the ability to create digital experiences that not only engage users but also enhance their lives in meaningful ways. As I continue growing as a developer, I am continuously inspired by the opportunity to shape virtual environments, just as I once shaped physical spaces.</p>
+                        <p>I'm a front-end software engineer based in Los Angeles with a passion for design, structure and efficency. Transitioning from the physical world as an interior designer to the digital world, I am especially interested in creating responsive components that are functional while beautiful, interactive and fun for the user.
+                        </p>
+                        <p>When I'm not coding, you can find me thrifting, sewing, soaking up inspiration in nature and museums, or doing yoga. </p>
                     </div>
-                    <div className="socialIcons">
-                        <a href="https://www.linkedin.com/in/michelle-aberizk-99148624/" className="icon"><i
+                    {/* <div className="socialIcons">
+                        <a href="https://www.linkedin.com/in/michelle-aberizk-99148624/" target="_blank" className="icon"><i
                             className="fa fa-linkedin-square" style={{ fontSize: "32px" }}></i></a>
-                        <a href="https://www.pinterest.com/meesh129/" className="icon"><i className="fa fa-pinterest"
+                        <a href="https://www.pinterest.com/meesh129/" className="icon"><i className="fa fa-pinterest" target="_blank"
                             style={{ fontSize: "32px" }}></i></a>
-                        <a href="https://github.com/maberizk" className="icon"><i className="fa fa-github"
+                        <a href="https://github.com/maberizk" target="_blank" className="icon"><i className="fa fa-github"
                             style={{ fontSize: "32px" }}></i></a>
-                    </div>
+                    </div> */}
                 </div>
-                <div className="michelleImgContainer">
+                <div data-aos="fade-left" className="michelleImgContainer">
                     <img src={michelleNoBG} className="michelleImg" />
                 </div>
             </div>

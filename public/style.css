@@ -3,6 +3,7 @@ body {
     height: 100%;
     font-family: 'Montserrat', sans-serif;
     color: black;
+    background-color: rgb(4, 79, 98);
 }
 
 /* home page  */
@@ -20,8 +21,9 @@ body {
     font-weight: 100;
 }
 
-.link:hover {
-    color: rgb(17, 34, 231);
+.link:hover,
+.linkWhite:hover {
+    font-weight: 400;
 }
 
 .linkWhite {
@@ -31,9 +33,6 @@ body {
     font-weight: 100;
 }
 
-.linkWhite:hover {
-    color: rgb(225, 154, 23)
-}
 
 .nav {
     display: flex;
@@ -57,100 +56,6 @@ body {
     letter-spacing: .3rem;
 }
 
-.homeAbout {
-    font-size: 2rem;
-    text-align: center;
-    letter-spacing: .3rem;
-}
-
-/* animated text  */
-.animationContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50vh
-}
-
-.animateText {
-    font-weight: 200;
-    font-size: 2.5em;
-    text-transform: uppercase;
-    letter-spacing: 0.5em;
-    width: 50%;
-}
-
-.animateText .letter {
-    display: inline-block;
-    line-height: 1em;
-}
-
-/* footer  */
-.footer {
-    position: fixed;
-    text-align: center;
-    line-height: 0.5;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    color: antiquewhite;
-    border-top: .5px solid antiquewhite;
-    letter-spacing: .3rem;
-}
-
-.footerColor {
-    position: fixed;
-    text-align: center;
-    line-height: 0.5;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    color: antiquewhite;
-    border-top: .5px solid antiquewhite;
-    letter-spacing: .3rem;
-    background-color: rgb(4, 79, 98);
-}
-
-
-/* about page  */
-.about,
-.portfolio {
-    background-color: rgb(4, 79, 98);
-    height: 140vh;
-}
-
-.aboutContainer {
-    display: flex;
-    max-height: 100%;
-    padding-bottom: 20px;
-}
-
-.flexAbout {
-    padding-left: 2%;
-    width: 60%
-}
-
-.michelleImgContainer {
-    width: 40%;
-    position: absolute;
-    top: 6%;
-    right: 3%
-}
-
-.michelleImg {
-    max-width: auto;
-    height: 70%;
-    padding: 0 16px;
-}
-
-.hiText {
-    font-weight: 200;
-    font-size: 4.5em;
-    text-transform: uppercase;
-    letter-spacing: 0.3em;
-    color: antiquewhite;
-    margin: 2% 2% 0 2%;
-}
-
 .nav2 {
     display: flex;
     justify-content: space-between;
@@ -164,11 +69,107 @@ body {
     color: antiquewhite;
 }
 
+.homeAbout {
+    font-size: 2rem;
+    text-align: center;
+    letter-spacing: .3rem;
+}
+
+/* animated text  */
+
+.animationContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 100%;
+    max-width: 10000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.animateText {
+    font-weight: 200;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+    width: 80%;
+}
+
+.animateText .letter {
+    display: inline-block;
+    line-height: 1em;
+}
+
+/* footer  */
+
+.footer {
+    position: fixed;
+    text-align: center;
+    line-height: 0.5;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: antiquewhite;
+    border-top: .5px solid antiquewhite;
+    letter-spacing: .3rem;
+    font-weight: 200;
+}
+
+.footerColor {
+    text-align: center;
+    line-height: 0.5;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: antiquewhite;
+    border-top: .5px solid antiquewhite;
+    letter-spacing: .3rem;
+    background-color: rgb(4, 79, 98);
+    font-weight: 200;
+}
+
+.socialIcons {
+    padding-bottom: 1%;
+}
+
+/* about page  */
+
+.aboutContainer {
+    display: flex;
+}
+
+.flexAbout {
+    padding-left: 2%;
+    width: 60%
+}
+
+.michelleImg {
+    width: 100%;
+    height: 650px;
+    object-fit: cover;
+    transition: all 1s;
+}
+
+.michelleImg:hover {
+    transform: scale(1.1);
+}
+
+.aboutHeader {
+    font-weight: 200;
+    font-size: 4.5em;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    color: antiquewhite;
+    margin: 2% 2% 0 2%;
+}
 
 .aboutText {
     width: 80%;
     font-size: 1.5rem;
-    color: antiquewhite
+    font-weight: 200;
+    color: antiquewhite;
+    line-height: 1.4em;
 }
 
 .icon {
@@ -176,81 +177,76 @@ body {
     padding: 0 8px 0 0;
 }
 
-/* portfolio page
+/* portfolio page */
 
-/* .portfolioProjects {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-}
-
-.projectContainer {
-    position: relative;
-} */
-
-/* .portfolioProjects {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.projectContainer {
-    position: relative;
-}
-
-.projectContainer img {
-    display: block;
-    width: 100%;
-    height: 85%;
-    object-fit: cover;
-}
-
-.projectContainer .imageText {
-    position: absolute;
-    inset: 0;
-    font-size: 2rem;
-    padding: 1rem;
-    background: rgba(255, 255, 255, 0.9);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 81.5%
-} */
-
-/* .projectImg {
-    width: 100%
-} */
-
-/* .imageText {
-    text-align: center;
-    text-transform: uppercase;
-    padding: 0;
-    margin: 0;
-}
-
-.projectContainer2 {
-    display: flex;
-    flex-direction: row;
-    width: 33%;
-    height: 300;
-    flex-wrap: wrap;
-} */
-
-.portfolio{
+.portfolio {
     width: 100%;
 }
 
 .portfolioProjects {
     display: flex;
+    flex: 1;
     flex-wrap: wrap;
     justify-content: center;
     background-color: rgb(4, 79, 98);
-
+    max-width: 1500px;
+    text-align: center;
+    margin: 0 auto;
 }
 
-.portfolioProjects img {
+.projectCard {
+    position: relative;
     width: 450px;
     height: 600px;
     object-fit: fill;
+}
+
+.project_image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+    backdrop-filter: blur(5px);
+}
+
+.image_overlay>* {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.image_overlay:hover {
+    opacity: 1;
+}
+
+.image_overlay:hover>* {
+    transform: translateY(0);
+}
+
+.image_title {
+    font-size: 2em;
+    margin: 0;
+    font-weight: bold;
+}
+
+.image_description {
+    font-size: 1.4em;
+    margin-top: 0.1em;
 }
 
 /* project page  */
@@ -259,6 +255,12 @@ body {
     color: antiquewhite;
     text-align: center;
 }
+
+.singleProject_images {
+    width: 400px;
+    height: auto;
+}
+
 
 /* responsive web  */
 

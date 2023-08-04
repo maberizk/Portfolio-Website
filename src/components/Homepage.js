@@ -62,7 +62,7 @@ const Homepage = () => {
                 <img src={oceanImg} className="backgroundImg" />
                 <Navbar />
                 <div className="animationContainer">
-                    <div className="animateText">Software Development and Design</div>
+                    <div className="animateText">Software Development and Design </div>
                 </div>
             </div>
             <Footer />
