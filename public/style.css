@@ -256,6 +256,11 @@ body {
     text-align: center;
 }
 
+.singleProject_images {
+    width: 400px;
+    height: auto;
+}
+
 
 /* responsive web  */
 
