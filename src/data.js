@@ -4,7 +4,7 @@ export const projects = [
         title: "GoVibe",
         id: 1,
         description: "App Concept",
-        image: "/images/GoVibe_4.png",
+        image: "/images/GoVibe_Cover.png",
         images: [
             '/images/GoVibe_1.png',
             '/images/GoVibe_2.png',
@@ -19,7 +19,7 @@ export const projects = [
         title: "Grandad's Tech",
         id: 2,
         description: "E-Commerce Website",
-        image: "/images/Grandad_2.png",
+        image: "/images/Grandad_cover.png",
         images: [
             '/images/Grandad_1.png',
             '/images/Grandad_2.png',
@@ -27,8 +27,21 @@ export const projects = [
         ]
     },
     {
-        title: "Neighborly",
+        title: "The Ranch",
         id: 3,
+        description: "UX / UI Design Update",
+        image: '/images/TheRanch_4.jpg',
+        images: [
+            '/images/TheRanch_1.jpg',
+            '/images/TheRanch_2.jpg',
+            '/images/TheRanch_3.jpg',
+            '/images/TheRanch_4.jpg',
+            '/images/TheRanch_5.jpg',
+        ]
+    },
+    {
+        title: "Neighborly",
+        id: 4,
         description: "UX Design Concept",
         image: "/images/neighborlyHome.jpg",
         images: [
@@ -42,7 +55,7 @@ export const projects = [
     },
     {
         title: "Seasons Bloom",
-        id: 4,
+        id: 5,
         description: "UX Design Concept",
         image: '/images/seasonsBloom.png',
         images: [
@@ -53,7 +66,7 @@ export const projects = [
     },
     {
         title: "Matters of Space",
-        id: 5,
+        id: 6,
         description: "Interior Design",
         image: '/images/Mos_Bonita2.jpg',
         images: [
@@ -76,7 +89,7 @@ export const projects = [
     },
     {
         title: "Aberizk Store",
-        id: 6,
+        id: 7,
         description: "Interior Design",
         image: '/images/Aberizk_2.jpeg',
         images: [
