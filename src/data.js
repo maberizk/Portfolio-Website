@@ -1,20 +1,59 @@
 
 export const projects = [
     {
-        title: "Neighborly",
+        title: "GoVibe",
         id: 1,
+        description: "App Concept",
+        image: "/images/GoVibe_4.png",
+        images: [
+            '/images/GoVibe_1.png',
+            '/images/GoVibe_2.png',
+            '/images/GoVibe_3.png',
+            '/images/GoVibe_4.png',
+            '/images/GoVibe_5.png',
+            '/images/GoVibe_6.png',
+            '/images/GoVibe_7.png',
+        ]
+    },
+    {
+        title: "Grandad's Tech",
+        id: 2,
+        description: "E-Commerce Website",
+        image: "/images/Grandad_2.png",
+        images: [
+            '/images/Grandad_1.png',
+            '/images/Grandad_2.png',
+            '/images/Grandad_3.png',
+        ]
+    },
+    {
+        title: "Neighborly",
+        id: 3,
         description: "UX Design Concept",
         image: "/images/neighborlyHome.jpg",
+        images: [
+            '/images/Neighborly_1.jpg',
+            '/images/Neighborly_2.jpg',
+            '/images/Neighborly_3.jpg',
+            '/images/Neighborly_4.jpg',
+            '/images/Neighborly_5.png',
+
+        ]
     },
     {
         title: "Seasons Bloom",
-        id: 2,
+        id: 4,
         description: "UX Design Concept",
-        image: '/images/seasonsBloom.png'
+        image: '/images/seasonsBloom.png',
+        images: [
+            '/images/SB_1.png',
+            '/images/SB_2.png',
+            '/images/SB_3.png',
+        ]
     },
     {
         title: "Matters of Space",
-        id: 3,
+        id: 5,
         description: "Interior Design",
         image: '/images/Mos_Bonita2.jpg',
         images: [
@@ -37,7 +76,7 @@ export const projects = [
     },
     {
         title: "Aberizk Store",
-        id: 4,
+        id: 6,
         description: "Interior Design",
         image: '/images/Aberizk_2.jpeg',
         images: [
@@ -45,18 +84,7 @@ export const projects = [
             '/images/Aberizk_2.jpeg',
             '/images/Aberizk_3.jpeg',
             '/images/Aberizk_4.jpeg'
-        ]
+        ],
+        about: "Remodeled a storage space into an independent designer and vintage store in NYC- maximized display potential, user flow and adhered to ADA standards. Designed the storefront, custom register and clothing racks in collaboration with the owners vision for their first brick and mortar store."
     },
-    {
-        title: "Interior Design",
-        id: 5,
-        description: "Residential and Commercial",
-        image: '/images/powderBath.jpeg'
-    },
-    {
-        title: "Interior Design",
-        id: 6,
-        description: "Residential and Commercial",
-        image: '/images/powderBath.jpeg'
-    }
 ]
