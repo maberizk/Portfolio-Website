@@ -33,6 +33,7 @@ body {
     font-weight: 100;
 }
 
+/* nav bar  */
 
 .nav {
     display: flex;
@@ -56,23 +57,42 @@ body {
     letter-spacing: .3rem;
 }
 
+/* 
 .nav2 {
     display: flex;
     justify-content: space-between;
     border-bottom: .5px solid antiquewhite;
     color: antiquewhite;
-}
+} */
 
-.navLinks2 {
+/* .navLinks2 {
     text-decoration: none;
     padding: 0 1rem;
     color: antiquewhite;
-}
+} */
 
-.homeAbout {
+/* .homeAbout {
     font-size: 2rem;
     text-align: center;
     letter-spacing: .3rem;
+} */
+
+.toggle-button {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 18px;
+}
+
+.toggle-button .bar {
+    height: 1px;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
 }
 
 /* animated text  */
@@ -267,7 +287,7 @@ body {
 
 .singleProject_info {
     display: flex;
-    margin: 2% 4%; 
+    margin: 2% 4%;
 }
 
 .singleProject_header {
@@ -279,16 +299,82 @@ body {
 
 /* responsive web  */
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 480px) {
 
-    .nav2,
-    .navRight,
+    /* nav */
+    .backgroundImg {
+        width: 100%;
+        /* height: 100%; */
+        object-fit: cover;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navRight {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        /* align-items: flex-start; */
+        width: 100%;
+        background-color: rgb(4, 79, 98);
+        position: absolute;
+        top: 1%;
+    }
+
+    .navRight.active {
+        display: flex;
+        z-index: 2;
+    }
+
+    .navRight.open>.bar {
+        transform: translate(-40px);
+        background-color: transparent;
+    }
+
+    .toggle-button.open>.bar::before {
+        width: 32px;
+        transform: rotate(45deg) translate(26px, -26px)
+    }
+
+    .toggle-button.open>.bar::after {
+        transform: rotate(-45deg) translate(26px, 26px)
+    }
+
+    .link {
+        font-size: large;
+    }
+
+    .linkWhite {
+        font-size: large;
+    }
+
+    .barWhite.bar {
+        height: 1px;
+        width: 100%;
+        background-color: antiquewhite;
+        border-radius: 10px;
+    }
+
+    /* home */
+
+    .animateText {
+        font-size: 1.5em;
+        max-width: 290px;
+    }
+}
+
+
+@media screen and (min-width: 481px) and (max-width: 700px) {
+
+    /* .navRight,
     .nav,
     .navRight {
         flex-direction: column;
         font-size: small;
         line-height: .3rem;
-    }
+    } */
 
     .footer,
     .footer2 {
