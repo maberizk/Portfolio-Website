@@ -178,6 +178,7 @@ body {
     height: 650px;
     object-fit: cover;
     transition: all 1s;
+    max-width: 600px;
 }
 
 .michelleImg:hover {
@@ -194,7 +195,7 @@ body {
 }
 
 .aboutText {
-    width: 80%;
+    /* width: 80%; */
     font-size: 1.5rem;
     font-weight: 200;
     color: antiquewhite;
@@ -388,6 +389,40 @@ body {
         padding-bottom: 2%
     }
 
+    .aboutHeader {
+        font-size: 2.5em;
+        margin: 16px;
+    }
+
+
+    .aboutContainer {
+        margin: 16px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .michelleImg {
+        padding: 16px;
+        height: 400px;
+        width: auto;
+    }
+
+
+    .flexAbout {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        /* Align items at the top */
+    }
+
+    .michelleImgContainer {
+        flex: 1;
+        /* Allow image container to grow and take available space */
+        padding-left: 16px;
+        /* Add some spacing between text and image */
+    }
+
 }
 
 
@@ -400,6 +435,11 @@ body {
         font-size: small;
         line-height: .3rem;
     } */
+
+    .navRight,
+    .navLeft {
+        font-size: .6em;
+    }
 
     .footer,
     .footer2 {
@@ -421,6 +461,11 @@ body {
         padding: 0;
     }
 
+    .aboutHeader {
+        font-size: 3em;
+
+    }
+
     .aboutText {
         width: 100%;
     }
@@ -430,7 +475,7 @@ body {
     }
 
     .michelleImg {
-        width: 40%;
+        /* width: 40%; */
         float: left;
         padding: 16px;
     }
@@ -443,9 +488,10 @@ body {
         max-width: 450px;
     }
 
-    @media screen and (min-width: 768px) and (max-width: 991px) {
-        .animateText {
-            max-width: 600px;
-        }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .animateText {
+        max-width: 450px;
     }
 }

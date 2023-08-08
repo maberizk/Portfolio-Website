@@ -78,11 +78,8 @@ const Homepage = () => {
                 <div className="animationContainer">
                     <div className="animateText">
                         <span className="noWrap">Software</span>
-                        <span></span>
                         <span className="noWrap"> Engineer</span>
-                        <span></span>
                         <span className="noWrap">+</span>
-                        <span></span>
                         <span className="noWrap">Designer</span>
                     </div>
                 </div>
