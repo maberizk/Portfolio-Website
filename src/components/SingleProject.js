@@ -18,8 +18,13 @@ export default function SingleProject() {
         <div className="projectPage">
             <Navbar />
             <div>
-                <h1>{project.title}</h1>
-                <p>{project.about}</p>
+                <div className="singleProject_info">
+                    <div className="singleProject_header">
+                    <h1>{project.title}</h1>
+                    <p>{project.description}</p>
+                    </div>
+                    <p>{project.about}</p>
+                </div>
                 <div className="singleProject">
                     {project.images.map((image, index) => (
                         <img

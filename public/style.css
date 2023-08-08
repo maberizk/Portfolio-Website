@@ -199,6 +199,10 @@ body {
     width: 450px;
     height: 600px;
     object-fit: fill;
+    border-right: 1px solid antiquewhite;
+    border-left: 1px solid antiquewhite;
+    border-bottom: 1px solid antiquewhite;
+    padding: 4%;
 }
 
 .project_image {
@@ -261,6 +265,17 @@ body {
     height: auto;
 }
 
+.singleProject_info {
+    display: flex;
+    margin: 2% 4%; 
+}
+
+.singleProject_header {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 1%;
+}
 
 /* responsive web  */
 
