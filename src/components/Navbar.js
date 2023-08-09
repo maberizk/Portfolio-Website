@@ -27,6 +27,7 @@ const Navbar = () => {
                         About</Link></h1>
             </div>
             <a href="#" className={`toggle-button ${isOpen ? "open" : ""}`} onClick={() => setIsOpen(!isOpen)}>
+
                 <span className={`bar ${isHomepage ? "" : "barWhite"}`}></span>
                 <span className={`bar ${isHomepage ? "" : "barWhite"}`}></span>
                 <span className={`bar ${isHomepage ? "" : "barWhite"}`}></span>
@@ -36,3 +37,5 @@ const Navbar = () => {
 }
 
 export default Navbar;
+
+

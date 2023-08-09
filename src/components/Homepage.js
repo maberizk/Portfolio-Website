@@ -77,9 +77,9 @@ const Homepage = () => {
                 <Navbar />
                 <div className="animationContainer">
                     <div className="animateText">
-                        <span className="noWrap">Software</span>
-                        <span className="noWrap"> Engineer</span>
-                        <span className="noWrap">+</span>
+                        <span>Software</span>
+                        <span> Engineer</span>
+                        <span>+</span>
                         <span className="noWrap">Designer</span>
                     </div>
                 </div>

@@ -3,7 +3,11 @@ body {
     height: 100%;
     font-family: 'Montserrat', sans-serif;
     color: black;
-    background-color: rgb(4, 79, 98);
+    background-color: var(--deepBlue)
+}
+
+:root {
+    --deepBlue: rgb(4, 79, 98);
 }
 
 /* home page  */
@@ -33,67 +37,6 @@ body {
     font-weight: 100;
 }
 
-/* nav bar  */
-
-.nav {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: .5px solid black;
-}
-
-.navWhite {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: .5px solid antiquewhite;
-}
-
-.navLeft {
-    padding: 0 1rem;
-    letter-spacing: .3rem;
-}
-
-.navRight {
-    display: flex;
-    letter-spacing: .3rem;
-}
-
-/* 
-.nav2 {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: .5px solid antiquewhite;
-    color: antiquewhite;
-} */
-
-/* .navLinks2 {
-    text-decoration: none;
-    padding: 0 1rem;
-    color: antiquewhite;
-} */
-
-/* .homeAbout {
-    font-size: 2rem;
-    text-align: center;
-    letter-spacing: .3rem;
-} */
-
-.toggle-button {
-    position: absolute;
-    top: 1.5rem;
-    right: 1.5rem;
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 18px;
-}
-
-.toggle-button .bar {
-    height: 1px;
-    width: 100%;
-    background-color: black;
-    border-radius: 10px;
-}
 
 /* animated text  */
 
@@ -307,14 +250,59 @@ body {
     padding: 1%;
 }
 
+/* nav bar  */
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: .5px solid black;
+}
+
+.navWhite {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: .5px solid antiquewhite;
+}
+
+.navLeft {
+    padding: 0 1rem;
+    letter-spacing: .3rem;
+}
+
+.navRight {
+    display: flex;
+    letter-spacing: .3rem;
+}
+
+.toggle-button {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 18px;
+}
+
+.toggle-button .bar {
+    height: 1px;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+}
+
+
+
 /* responsive web  */
 
 @media screen and (max-width: 480px) {
 
+
+
     /* nav */
     .backgroundImg {
         width: 100%;
-        /* height: 100%; */
         object-fit: cover;
     }
 
@@ -322,35 +310,26 @@ body {
         display: flex;
     }
 
+
     .navRight {
         display: none;
         flex-direction: column;
         align-items: center;
-        /* align-items: flex-start; */
         width: 100%;
         background-color: rgb(4, 79, 98);
         position: absolute;
         top: 1%;
         border: 1px solid antiquewhite;
-        z-index: 2;
+        z-index: 2000;
+        color: antiquewhite
     }
 
     .navRight.active {
-        display: flex;
+        display: block;
     }
 
-    .navRight.open>.bar {
-        transform: translate(-40px);
-        background-color: transparent;
-    }
-
-    .toggle-button.open>.bar::before {
-        width: 32px;
-        transform: rotate(45deg) translate(26px, -26px)
-    }
-
-    .toggle-button.open>.bar::after {
-        transform: rotate(-45deg) translate(26px, 26px)
+    h1 .navRight.active {
+        color: antiquewhite
     }
 
     .link {
@@ -359,6 +338,7 @@ body {
 
     .linkWhite {
         font-size: large;
+        color: antiquewhite
     }
 
     .barWhite.bar {
@@ -367,6 +347,10 @@ body {
         background-color: antiquewhite;
         border-radius: 10px;
     }
+
+    /* .open {
+        background-color: rgb(4, 79, 98);
+    } */
 
     /* home */
 
@@ -389,6 +373,7 @@ body {
         padding-bottom: 2%
     }
 
+    /* about page */
     .aboutHeader {
         font-size: 2.5em;
         margin: 16px;
@@ -421,6 +406,15 @@ body {
         /* Allow image container to grow and take available space */
         padding-left: 16px;
         /* Add some spacing between text and image */
+        z-index: 0;
+    }
+
+    /* porfolio page */
+
+    .portfolioProjects {
+        /* display: flex;
+        flex-direction: column; */
+        z-index: 0;
     }
 
 }
