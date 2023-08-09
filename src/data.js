@@ -14,7 +14,8 @@ export const projects = [
             '/images/GoVibe_6.png',
             '/images/GoVibe_7.png',
         ],
-        about: "Simplified the process of finding new activities to do nearby, allowing the user ability to create an itinerary for today or add to favorite list to for search or sort later. Developed an interactive and seamless interface with a team of 6, using React Native, CSS, Ruby on Rails and API. Designed splash screen animation, navigation and ensured compliance with ADA guidelines for colors"
+        about: "Simplified the process of finding new activities to do nearby, allowing the user ability to create an itinerary for today or add to favorite list to for search or sort later. Developed an interactive and seamless interface with a team of 6, using React Native, CSS, Ruby on Rails and API. Designed splash screen animation, navigation and ensured compliance with ADA guidelines for colors",
+        role: "Front-End Developer and UX/UI Designer"
     },
     {
         title: "Grandad's Tech",
@@ -26,7 +27,8 @@ export const projects = [
             '/images/Grandad_2.png',
             '/images/Grandad_3.png',
         ],
-        about: "Collaborated with a team of 4 on design and development of an end-to-end e-commerce website. Selling good quality nostalgic tech products. Developed and designed using PERN stack. Executed UX/UI design concepts to ensure smooth and visually appealing user experience."
+        about: "Collaborated with a team of 4 on design and development of an end-to-end e-commerce website. Selling good quality nostalgic tech products. Developed and designed using PERN stack. Executed UX/UI design concepts to ensure smooth and visually appealing user experience.",
+        role: "Fullstack Developer and UX/UI Designer"
     },
     {
         title: "The Ranch",
@@ -40,7 +42,8 @@ export const projects = [
             '/images/TheRanch_4.jpg',
             '/images/TheRanch_5.jpg',
         ],
-        about: "Designed wireframes and prototypes optimized for a range of devices. Addressed user pain points of websites to improve engagement and user satisfaction. Honed skills in user-centered design, information architecture, and responsive design principles"
+        about: "Designed wireframes and prototypes optimized for a range of devices. Addressed user pain points of websites to improve engagement and user satisfaction. Honed skills in user-centered design, information architecture, and responsive design principles",
+        role: "UX/UI Designer"
     },
     {
         title: "Neighborly",
@@ -54,7 +57,8 @@ export const projects = [
             '/images/Neighborly_4.jpg',
             '/images/Neighborly_5.png',
         ],
-        about: "Neighborly strives to make it easy for people to find local businesses. Whether new to a community, interested in saving the environment or a desire to support small shops, Neighborly fills the gap to guide likeminded people around their neighborhoods. "
+        about: "Neighborly strives to make it easy for people to find local businesses. Whether new to a community, interested in saving the environment or a desire to support small shops, Neighborly fills the gap to guide likeminded people around their neighborhoods. ",
+        role: "UX/UI Designer"
     },
     {
         title: "Seasons Bloom",
@@ -67,7 +71,8 @@ export const projects = [
             '/images/SB_3.png',
             '/images/SB_4.png',
         ],
-        about: "Seasons Bloom strives to give the user a simple and enjoyable flower ordering experience, targeting the unsure occasional buyer as well as a refined, subscription based buyer. "
+        about: "Seasons Bloom strives to give the user a simple and enjoyable flower ordering experience, targeting the unsure occasional buyer as well as a refined, subscription based buyer. ",
+        role: "UX/UI Designer"
     },
     {
         title: "Matters of Space",
@@ -90,7 +95,8 @@ export const projects = [
             "/images/Mos_Lowry1.jpeg",
             "/images/Mos_Lowry2.jpeg"
         ],
-        about: "Interior Designer and Project Manager at Matters of Space"
+        about: "Interior Designer and Project Manager at Matters of Space",
+        role: "Associate Interior Designer"
     },
     {
         title: "Aberizk Store",
@@ -103,6 +109,7 @@ export const projects = [
             '/images/Aberizk_3.jpeg',
             '/images/Aberizk_4.jpeg'
         ],
-        about: "Remodeled a storage space into an independent designer and vintage store in NYC- maximized display potential, user flow and adhered to ADA standards. Designed the storefront, custom register and clothing racks in collaboration with the owners vision for their first brick and mortar store."
+        about: "Remodeled a storage space into an independent designer and vintage store in NYC- maximized display potential, user flow and adhered to ADA standards. Designed the storefront, custom register and clothing racks in collaboration with the owners vision for their first brick and mortar store.",
+        role: "Associate Interior Designer"
     },
 ]

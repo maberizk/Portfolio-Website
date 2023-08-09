@@ -9,7 +9,7 @@ export default function Portfolio() {
     return (
         <div className="portfolio">
             <Navbar />
-            <div className="portfolioProjects">
+            <div data-aos="fade-up" className="portfolioProjects">
                 {projects.map((project) => (
 
                     <NavLink to={`/portfolio/${project.id}`} className="projectCard">
