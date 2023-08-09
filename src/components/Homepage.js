@@ -56,15 +56,34 @@ const Homepage = () => {
     // }, []);
 
 
+    //     return (
+    //         <div>
+    //             <div>
+    //                 <img src={oceanImg} className="backgroundImg" />
+    //                 <Navbar />
+    //                 <div className="animationContainer">
+    //                     <div className="animateText">Software Engineer + Designer </div>
+    //                 </div>
+    //             </div>
+    //             <Footer />
+    //         </div>
+    //     )
+    // }
+
     return (
         <div>
             <div>
                 <img src={oceanImg} className="backgroundImg" />
                 <Navbar />
                 <div className="animationContainer">
-                    <div className="animateText">Software Development and Design </div>
+                    <div className="animateText">
+                        <span>Software</span>
+                        <span> Engineer</span>
+                        <span>+</span>
+                        <span className="noWrap">Designer</span>
+                    </div>
                 </div>
-            </div>
+            </div >
             <Footer />
         </div>
     )

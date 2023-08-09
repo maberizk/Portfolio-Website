@@ -3,7 +3,11 @@ body {
     height: 100%;
     font-family: 'Montserrat', sans-serif;
     color: black;
-    background-color: rgb(4, 79, 98);
+    background-color: var(--deepBlue)
+}
+
+:root {
+    --deepBlue: rgb(4, 79, 98);
 }
 
 /* home page  */
@@ -34,47 +38,6 @@ body {
 }
 
 
-.nav {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: .5px solid black;
-}
-
-.navWhite {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: .5px solid antiquewhite;
-}
-
-.navLeft {
-    padding: 0 1rem;
-    letter-spacing: .3rem;
-}
-
-.navRight {
-    display: flex;
-    letter-spacing: .3rem;
-}
-
-.nav2 {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: .5px solid antiquewhite;
-    color: antiquewhite;
-}
-
-.navLinks2 {
-    text-decoration: none;
-    padding: 0 1rem;
-    color: antiquewhite;
-}
-
-.homeAbout {
-    font-size: 2rem;
-    text-align: center;
-    letter-spacing: .3rem;
-}
-
 /* animated text  */
 
 .animationContainer {
@@ -83,7 +46,7 @@ body {
     align-items: center;
     height: 50vh;
     width: 100%;
-    max-width: 10000px;
+    max-width: 1000px;
     margin: 0 auto;
     text-align: center;
 }
@@ -94,11 +57,16 @@ body {
     text-transform: uppercase;
     letter-spacing: 0.5em;
     width: 80%;
+
 }
 
 .animateText .letter {
     display: inline-block;
     line-height: 1em;
+}
+
+.noWrap {
+    white-space: nowrap;
 }
 
 /* footer  */
@@ -133,6 +101,10 @@ body {
     padding-bottom: 1%;
 }
 
+.icon {
+    font-size: 28px;
+}
+
 /* about page  */
 
 .aboutContainer {
@@ -149,6 +121,7 @@ body {
     height: 650px;
     object-fit: cover;
     transition: all 1s;
+    max-width: 600px;
 }
 
 .michelleImg:hover {
@@ -165,7 +138,7 @@ body {
 }
 
 .aboutText {
-    width: 80%;
+    /* width: 80%; */
     font-size: 1.5rem;
     font-weight: 200;
     color: antiquewhite;
@@ -199,6 +172,10 @@ body {
     width: 450px;
     height: 600px;
     object-fit: fill;
+    border-right: 1px solid antiquewhite;
+    border-left: 1px solid antiquewhite;
+    border-bottom: 1px solid antiquewhite;
+    padding: 4%;
 }
 
 .project_image {
@@ -261,18 +238,201 @@ body {
     height: auto;
 }
 
+.singleProject_info {
+    display: flex;
+    margin: 2% 4%;
+}
+
+.singleProject_header {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 1%;
+}
+
+/* nav bar  */
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: .5px solid black;
+}
+
+.navWhite {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: .5px solid antiquewhite;
+}
+
+.navLeft {
+    padding: 0 1rem;
+    letter-spacing: .3rem;
+}
+
+.navRight {
+    display: flex;
+    letter-spacing: .3rem;
+}
+
+.toggle-button {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 18px;
+}
+
+.toggle-button .bar {
+    height: 1px;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+}
+
+
 
 /* responsive web  */
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 480px) {
 
-    .nav2,
-    .navRight,
+
+
+    /* nav */
+    .backgroundImg {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+
+    .navRight {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background-color: rgb(4, 79, 98);
+        position: absolute;
+        top: 1%;
+        border: 1px solid antiquewhite;
+        z-index: 2000;
+        color: antiquewhite
+    }
+
+    .navRight.active {
+        display: block;
+    }
+
+    h1 .navRight.active {
+        color: antiquewhite
+    }
+
+    .link {
+        font-size: large;
+    }
+
+    .linkWhite {
+        font-size: large;
+        color: antiquewhite
+    }
+
+    .barWhite.bar {
+        height: 1px;
+        width: 100%;
+        background-color: antiquewhite;
+        border-radius: 10px;
+    }
+
+    /* .open {
+        background-color: rgb(4, 79, 98);
+    } */
+
+    /* home */
+
+    .animateText {
+        font-size: 1.5em;
+        max-width: 270px;
+    }
+
+    /* Footer */
+
+    .footer_email {
+        font-size: .75em
+    }
+
+    .icon {
+        font-size: 24px;
+    }
+
+    .socialIcons {
+        padding-bottom: 2%
+    }
+
+    /* about page */
+    .aboutHeader {
+        font-size: 2.5em;
+        margin: 16px;
+    }
+
+
+    .aboutContainer {
+        margin: 16px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .michelleImg {
+        padding: 16px;
+        height: 400px;
+        width: auto;
+    }
+
+
+    .flexAbout {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        /* Align items at the top */
+    }
+
+    .michelleImgContainer {
+        flex: 1;
+        /* Allow image container to grow and take available space */
+        padding-left: 16px;
+        /* Add some spacing between text and image */
+        z-index: 0;
+    }
+
+    /* porfolio page */
+
+    .portfolioProjects {
+        /* display: flex;
+        flex-direction: column; */
+        z-index: 0;
+    }
+
+}
+
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+
+    /* .navRight,
     .nav,
     .navRight {
         flex-direction: column;
         font-size: small;
         line-height: .3rem;
+    } */
+
+    .navRight,
+    .navLeft {
+        font-size: .6em;
     }
 
     .footer,
@@ -295,6 +455,11 @@ body {
         padding: 0;
     }
 
+    .aboutHeader {
+        font-size: 3em;
+
+    }
+
     .aboutText {
         width: 100%;
     }
@@ -304,12 +469,23 @@ body {
     }
 
     .michelleImg {
-        width: 40%;
+        /* width: 40%; */
         float: left;
         padding: 16px;
     }
 
     .homeAbout {
         margin: 16px;
+    }
+
+    .animateText {
+        max-width: 450px;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .animateText {
+        max-width: 450px;
     }
 }
