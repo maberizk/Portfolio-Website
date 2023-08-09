@@ -5,6 +5,9 @@ import Homepage from "./components/Homepage";
 import Portfolio from "./components/Portfolio";
 import About from "./components/About";
 import SingleProject from "./components/SingleProject";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+
 
 import AOS from "aos";
 import "aos/dist/aos.css";

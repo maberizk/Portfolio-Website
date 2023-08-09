@@ -6,6 +6,7 @@ body {
     background-color: var(--deepBlue)
 }
 
+
 :root {
     --deepBlue: rgb(4, 79, 98);
 }
@@ -72,7 +73,7 @@ body {
 /* footer  */
 
 .footer {
-    position: fixed;
+    position: absolute;
     text-align: center;
     line-height: 0.5;
     bottom: 0;
@@ -95,6 +96,10 @@ body {
     letter-spacing: .3rem;
     background-color: rgb(4, 79, 98);
     font-weight: 200;
+}
+
+.footer_email {
+    margin-top: 1%;
 }
 
 .socialIcons {
@@ -148,6 +153,12 @@ body {
 .icon {
     color: antiquewhite;
     padding: 0 8px 0 0;
+}
+
+.about,
+.portfolio,
+.projectPage {
+    background-color: var(--deepBlue)
 }
 
 /* portfolio page */
@@ -298,12 +309,13 @@ body {
 
 @media screen and (max-width: 480px) {
 
-    .nav, .navWhite {
+    .nav,
+    .navWhite {
         display: flex;
         flex-direction: column;
     }
 
-    #link{
+    #link {
         color: antiquewhite
     }
 
@@ -354,15 +366,16 @@ body {
         border-radius: 10px;
     }
 
-    /* .open {
-        background-color: rgb(4, 79, 98);
-    } */
+    .footer_email {
+        padding-top: 2%
+    }
+
 
     /* home */
 
     .animateText {
         font-size: 1.5em;
-        max-width: 270px;
+        max-width: 250px;
     }
 
     /* Footer */
@@ -409,17 +422,13 @@ body {
 
     .michelleImgContainer {
         flex: 1;
-        /* Allow image container to grow and take available space */
         padding-left: 16px;
-        /* Add some spacing between text and image */
         z-index: 0;
     }
 
     /* porfolio page */
 
     .portfolioProjects {
-        /* display: flex;
-        flex-direction: column; */
         z-index: 0;
     }
 
