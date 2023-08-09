@@ -18,12 +18,12 @@ const Navbar = () => {
 
             <div className={`navRight ${isOpen ? "active" : ""}`}>
                 <h1>
-                    <Link to="/portfolio" className={`${isHomepage ? "link" : "linkWhite"}`} >
+                    <Link to="/portfolio" id="link" className={`${isHomepage ? "link" : "linkWhite"}`} >
                         Portfolio
                     </Link></h1>
 
                 <h1>
-                    <Link to="/about" className={`${isHomepage ? "link" : "linkWhite"}`}>
+                    <Link to="/about" id="link" className={`${isHomepage ? "link" : "linkWhite"}`}>
                         About</Link></h1>
             </div>
             <a href="#" className={`toggle-button ${isOpen ? "open" : ""}`} onClick={() => setIsOpen(!isOpen)}>
