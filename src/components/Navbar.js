@@ -9,7 +9,7 @@ const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false)
 
     return (
-        <nav data-aos="fade-down" className={isHomepage ? "nav" : "navWhite"}>
+        <nav data-aos="fade-down" className={isHomepage ? "navigation" : "navWhite"}>
             <div className="navLeft">
                 <h1><Link to="/"
                     className={`${isHomepage ? "link" : "linkWhite"}`}

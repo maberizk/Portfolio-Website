@@ -80,7 +80,7 @@ const Homepage = () => {
                         <span>Software</span>
                         <span> Engineer</span>
                         <span>+</span>
-                        <span className="noWrap">Designer</span>
+                        <span>Designer</span>
                     </div>
                 </div>
             </div >

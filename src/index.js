@@ -6,6 +6,8 @@ import Portfolio from "./components/Portfolio";
 import About from "./components/About";
 import SingleProject from "./components/SingleProject";
 
+
+
 import AOS from "aos";
 import "aos/dist/aos.css";
 
