@@ -210,11 +210,10 @@ export default function SingleProject() {
 
     return (
         <div className="projectPage">
-            <Navbar />
+
             <div>
                 <Carousel />
             </div>
-            <Footer />
         </div>
     );
 }
