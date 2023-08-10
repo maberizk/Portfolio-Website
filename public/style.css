@@ -237,12 +237,22 @@ body {
     color: antiquewhite;
 }
 
+.singleProject {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid antiquewhite; */
+    /* width: 800px;
+    height: 800px; */
+}
+
 .projectPage {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 .carousel {
@@ -255,13 +265,14 @@ body {
 
 .inner {
     white-space: nowrap;
+    height: auto;
     transition: transform 0.3s;
     box-shadow: 0 5px 15px rbga(0, 0, 0, 0.05);
 }
 
 .carousel-item {
     display: inline-flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
 }
 
@@ -269,7 +280,7 @@ body {
 .carousel-img {
     width: 600px;
     height: auto;
-    max-height: 600px;
+    max-height: 500px;
     object-fit: scale-down;
     padding: 0 10px;
 
@@ -284,10 +295,38 @@ body {
     background-color: #ffff;
 } */
 
-/* .singleProject_info {
+.singleProject_info {
     display: flex;
+    width: 600px;
     margin: 2% 4%;
-} */
+}
+
+.project-details {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.projectHeader {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    /* justify-content: space-between; */
+}
+
+.projectTitle {
+    padding-right: 16px;
+}
+
+.project-details p,
+h2 {
+    margin: 0;
+    padding-bottom: 8px;
+}
+
+
 
 /* .singleProject_header {
     display: flex;
@@ -321,7 +360,7 @@ body {
     cursor: pointer;
     /* margin-top: 20px; */
     color: antiquewhite;
-    margin-top: 16px;
+    margin: 16px 0;
 }
 
 .indicators {

@@ -198,7 +198,13 @@ export default function SingleProject() {
 
     return (
         <div className="projectPage">
-
+            <div className="project-details">
+                <div className="projectHeader">
+                    <h2 className="projectTitle">{project.title}</h2>
+                    <p className="projectRole">{project.role}</p>
+                </div>
+                <p> {project.about}</p>
+            </div>
             <div>
                 <Carousel />
             </div>

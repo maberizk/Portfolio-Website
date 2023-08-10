@@ -110,6 +110,6 @@ export const projects = [
             '/images/Aberizk_4.jpeg'
         ],
         about: "Remodeled a storage space into an independent designer and vintage store in NYC- maximized display potential, user flow and adhered to ADA standards. Designed the storefront, custom register and clothing racks in collaboration with the owners vision for their first brick and mortar store.",
-        role: "Associate Interior Designer"
+        role: "Interior Designer"
     },
 ]
