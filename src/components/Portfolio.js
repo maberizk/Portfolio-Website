@@ -9,15 +9,16 @@ export default function Portfolio() {
     return (
         <div className="portfolio">
             <Navbar />
-            <div data-aos="fade-up" className="portfolioProjects">
+            <div data-aos="fade-down" className="portfolioProjects">
                 {projects.map((project) => (
 
-                    <NavLink to={`/portfolio/${project.id}`} className="projectCard">
+                    <NavLink to={`/portfolio/${project.id}`}
+                        key={project.id} className="projectCard">
+
                         <img
                             src={project.image}
                             className="project_image"
                             alt={project.title}
-                            key={project.id}
                         />
                         <div className="image_overlay">
                             <h3 className="image_title">{project.title}</h3>

@@ -237,14 +237,49 @@ body {
     color: antiquewhite;
 }
 
-.singleProject_images {
+.projectPage {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.carousel {
+    overflow: hidden;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.inner {
+    white-space: nowrap;
+    transition: transform 0.3s;
+    box-shadow: 0 5px 15px rbga(0, 0, 0, 0.05);
+}
+
+.carousel-item {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 490px;
+}
+
+
+.carousel-img {
+    width: 250px;
+    padding: 0 20px;
+}
+
+/* .singleProject_images {
     width: auto;
     height: 490px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     background-color: #ffff;
-}
+} */
 
 /* .singleProject_info {
     display: flex;
@@ -258,7 +293,7 @@ body {
     padding: 1%;
 } */
 
-.singleProject {
+/* .singleProject {
     overflow: hidden;
     width: 100%;
     padding: 0 2%;
@@ -267,30 +302,36 @@ body {
     justify-content: center;
 }
 
+.indicatorButton:active {
+    color: #ffff;
+} */
 
-.inner {
-    white-space: nowrap;
-    transition: transfrom 0.3s;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-}
-
-.carButtons {
+.carousel-buttons {
     display: flex;
     justify-content: space-evenly;
 }
 
-
-
-.buttonArrow,
-.indicatorButton {
+.button-arrow,
+.indicator-button {
     background: none;
     border: none;
     cursor: pointer;
-    margin-top: 20px;
+    /* margin-top: 20px; */
+    color: antiquewhite
 }
 
-.indicatorButton:active {
-    color: #ffff;
+.indicators {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.indicator-symbol {
+    color: antiquewhite
+}
+
+.indicator-symbol-active {
+    color: black;
 }
 
 /* nav bar  */
