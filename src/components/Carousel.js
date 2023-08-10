@@ -23,7 +23,7 @@ export const Carousel = () => {
         <div className="carousel">
             <div className="inner" style={{ transform: `translate(-${activeIndex * 100}%)` }}>
                 {project.images.map((image, index) => {
-                    return <CarouselItem key={index} image={image} width={"100%"} />
+                    return <CarouselItem key={image.id} image={image} width={"100%"} />
                 })}
             </div>
             <div className="carousel-buttons">

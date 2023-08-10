@@ -247,7 +247,7 @@ body {
 
 .carousel {
     overflow: hidden;
-    width: 700px;
+    width: 620px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -263,13 +263,16 @@ body {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    height: 490px;
 }
 
 
 .carousel-img {
-    width: 250px;
-    padding: 0 20px;
+    width: 600px;
+    height: auto;
+    max-height: 600px;
+    object-fit: scale-down;
+    padding: 0 10px;
+
 }
 
 /* .singleProject_images {
@@ -317,7 +320,8 @@ body {
     border: none;
     cursor: pointer;
     /* margin-top: 20px; */
-    color: antiquewhite
+    color: antiquewhite;
+    margin-top: 16px;
 }
 
 .indicators {

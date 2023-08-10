@@ -36,11 +36,11 @@ export const projects = [
         description: "UX / UI Design Update",
         image: '/images/TheRanch_4.jpg',
         images: [
-            '/images/TheRanch_1.jpg',
-            '/images/TheRanch_2.jpg',
-            '/images/TheRanch_3.jpg',
+            '/images/TheRanch_1.png',
+            '/images/TheRanch_2.png',
+            '/images/TheRanch_3.png',
             '/images/TheRanch_4.jpg',
-            '/images/TheRanch_5.jpg',
+            '/images/TheRanch_5.png',
         ],
         about: "Designed wireframes and prototypes optimized for a range of devices. Addressed user pain points of websites to improve engagement and user satisfaction. Honed skills in user-centered design, information architecture, and responsive design principles",
         role: "UX/UI Designer"

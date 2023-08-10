@@ -189,24 +189,12 @@ import { Carousel } from "./Carousel"
 export default function SingleProject() {
     const { id } = useParams();
 
-    const [activeIndex, setActiveIndex] = useState(0)
-
     const project = projects.find((project) => project.id === parseInt(id));
 
     if (!project) {
         return <div>Project not found</div>;
     }
 
-    const updateIndex = (newIndex) => {
-        if (newIndex < 0) {
-            newIndex = 0;
-        }
-        else if (newIndex >= project.length) {
-            newIndex = project.length - 1
-        }
-
-        setActiveIndex(newIndex)
-    }
 
     return (
         <div className="projectPage">
