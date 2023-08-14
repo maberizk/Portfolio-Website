@@ -195,19 +195,22 @@ export default function SingleProject() {
         return <div>Project not found</div>;
     }
 
-
     return (
-        <div className="projectPage">
-            <div className="project-details">
-                <div className="projectHeader">
-                    <h2 className="projectTitle">{project.title}</h2>
-                    <p className="projectRole">{project.role}</p>
+        <div>
+            <Navbar />
+            <div data-aos="fade-up" className="projectPage" >
+                <div className="project-details">
+                    <div className="projectHeader">
+                        <h2 className="projectTitle">{project.title}</h2>
+                    </div>
+                    <p className="projectRole"><span className="bold">Role:</span> <br></br>{project.role}</p>
+                    <p><span className="bold">Overview:</span> <br></br>{project.about}</p>
                 </div>
-                <p> {project.about}</p>
+                <div>
+                    <Carousel />
+                </div>
             </div>
-            <div>
-                <Carousel />
-            </div>
+            <Footer />
         </div>
     );
 }

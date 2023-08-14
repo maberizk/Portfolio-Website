@@ -104,8 +104,8 @@ export const projects = [
         description: "Interior Design",
         image: '/images/Aberizk_2.jpeg',
         images: [
-            '/images/Aberizk_1.jpeg',
             '/images/Aberizk_2.jpeg',
+            '/images/Aberizk_1.jpeg',
             '/images/Aberizk_3.jpeg',
             '/images/Aberizk_4.jpeg'
         ],

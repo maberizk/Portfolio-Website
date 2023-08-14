@@ -174,13 +174,31 @@ body {
 
 .projectCard {
     position: relative;
+    overflow: hidden;
     width: 450px;
     height: 600px;
     object-fit: fill;
-    border-right: 1px solid antiquewhite;
+    /* border-right: 1px solid antiquewhite;
     border-left: 1px solid antiquewhite;
     border-bottom: 1px solid antiquewhite;
-    padding: 3%;
+    padding: 3%; */
+}
+
+.bottomSheet {
+    position: absolute;
+    bottom: -100%;
+    /* Initially off-screen */
+    left: 0;
+    width: 100%;
+    background-color: white;
+    transition: bottom 0.3s ease-in-out;
+    transform-origin: bottom;
+    z-index: 1;
+}
+
+.open {
+    bottom: 0;
+    /* Display the bottom sheet */
 }
 
 .project_image {
@@ -233,10 +251,6 @@ body {
 
 /* project page  */
 
-.projectPage {
-    color: antiquewhite;
-}
-
 .singleProject {
     display: flex;
     flex-direction: column;
@@ -248,19 +262,23 @@ body {
 }
 
 .projectPage {
+    color: antiquewhite;
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    /* height: 100vh; */
+    flex-direction: row;
+    align-items: normal;
+    height: 90vh;
+    margin-top: 2%
+        /* border: 1px solid antiquewhite */
 }
 
 .carousel {
     overflow: hidden;
-    width: 620px;
+    width: 720px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: 0 16px;
 }
 
 .inner {
@@ -278,9 +296,9 @@ body {
 
 
 .carousel-img {
-    width: 600px;
+    width: 700px;
     height: auto;
-    max-height: 500px;
+    max-height: 600px;
     object-fit: scale-down;
     padding: 0 10px;
 
@@ -303,6 +321,7 @@ body {
 
 .project-details {
     width: 600px;
+    height: auto;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -318,14 +337,20 @@ body {
 
 .projectTitle {
     padding-right: 16px;
+    font-size: 3rem;
 }
 
 .project-details p,
 h2 {
     margin: 0;
     padding-bottom: 8px;
+    font-size: 1.5rem;
+    line-height: 1.4;
 }
 
+.bold {
+    font-weight: 600;
+}
 
 
 /* .singleProject_header {
@@ -417,6 +442,35 @@ h2 {
     width: 100%;
     background-color: black;
     border-radius: 10px;
+}
+
+
+/* popup */
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-inner {
+    position: relative;
+    padding: 32px;
+    width: 100%;
+    max-width: 640px;
+    background-color: #fff;
+}
+
+.popup-inner .close-btn {
+    position: absolute;
+    top: 16px;
+    right: 16px;
 }
 
 
