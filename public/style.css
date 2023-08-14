@@ -341,7 +341,8 @@ body {
 }
 
 .project-details p,
-h2 {
+h2,
+.projectLink {
     margin: 0;
     padding-bottom: 8px;
     font-size: 1.5rem;
@@ -352,6 +353,10 @@ h2 {
     font-weight: 600;
 }
 
+.projectLink {
+    text-decoration: none;
+    color: antiquewhite;
+}
 
 /* .singleProject_header {
     display: flex;

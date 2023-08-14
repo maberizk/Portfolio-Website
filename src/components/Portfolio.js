@@ -24,7 +24,7 @@
 //                         key={project.id} 
 //                         className={`projectCard ${openProject === project.id ? 'open' : ''}`}
 //                         >
-                       
+
 
 //                         <img
 //                             src={project.image}
@@ -65,7 +65,7 @@
 //             }}>Open Popup</button> */}
 //             <div data-aos="fade-down" className="portfolioProjects">
 //                 {projects.map((project) => (
-                    
+
 //                     <NavLink 
 //                     to={`/portfolio/${project.id}`}
 //                         key={project.id} className="projectCard"
@@ -82,7 +82,7 @@
 //                         </div>
 //                     </NavLink>
 //                 ))}
-                
+
 //                 {/* <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
 //                     <h1>My Popup</h1>
 //                 </Popup> */}
@@ -101,7 +101,7 @@ import Navbar from './Navbar';
 import Footer from './Footer';
 import { projects } from "../data";
 import { NavLink } from 'react-router-dom';
- 
+
 
 export default function Portfolio() {
 
@@ -110,13 +110,13 @@ export default function Portfolio() {
         <div className="portfolio">
             <Navbar />
 
-            <div data-aos="fade-down" className="portfolioProjects">
+            <div data-aos="fade-up" className="portfolioProjects">
                 {projects.map((project) => (
-                    
-                    <NavLink 
-                    to={`/portfolio/${project.id}`}
+
+                    <NavLink
+                        to={`/portfolio/${project.id}`}
                         key={project.id} className="projectCard"
-                        >
+                    >
 
                         <img
                             src={project.image}

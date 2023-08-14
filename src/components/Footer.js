@@ -13,7 +13,7 @@ export default function Footer() {
             <div className="socialIcons">
                 <a href="https://www.linkedin.com/in/michelle-aberizk-99148624/" target="_blank" className="icon"><i
                     className="fa fa-linkedin-square"></i></a>
-                <a href="https://www.pinterest.com/meesh129/" className="icon"><i className="fa fa-pinterest" target="_blank"></i></a>
+                <a href="https://www.pinterest.com/meesh129/" className="icon"><i className="fa fa-pinterest" target="_"></i></a>
                 <a href="https://github.com/maberizk" target="_blank" className="icon"><i className="fa fa-github"></i></a>
             </div>
         </div>
