@@ -198,7 +198,22 @@ body {
 
 .open {
     bottom: 0;
-    /* Display the bottom sheet */
+}
+
+
+.open .bar:nth-child(1) {
+    /* Rotate the first bar */
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.open .bar:nth-child(2) {
+    /* Hide the second bar */
+    opacity: 0;
+}
+
+.open .bar:nth-child(3) {
+    /* Rotate the third bar */
+    transform: rotate(45deg) translate(-5px, -6px);
 }
 
 .project_image {
@@ -264,12 +279,14 @@ body {
 .projectPage {
     color: antiquewhite;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     flex-direction: row;
     align-items: normal;
-    height: 90vh;
-    margin-top: 2%
-        /* border: 1px solid antiquewhite */
+    /* height: 90vh; */
+    margin-top: 2%;
+    margin-bottom: 5%;
+    /* border: 1px solid antiquewhite */
 }
 
 .carousel {
@@ -508,11 +525,10 @@ h2,
     .navRight {
         display: none;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
         background-color: rgb(4, 79, 98);
         top: 1%;
-        border: 1px solid antiquewhite;
-        z-index: 2000;
+        margin-left: 3%;
         color: antiquewhite
     }
 
@@ -585,7 +601,6 @@ h2,
         width: auto;
     }
 
-
     .flexAbout {
         width: 100%;
         display: flex;
@@ -605,6 +620,65 @@ h2,
         z-index: 0;
     }
 
+    .projectCard {
+        width: 300px;
+        height: 450px;
+    }
+
+    .carousel-img {
+        max-width: 380px;
+    }
+
+    .carousel {
+        width: 400px;
+    }
+
+    .carousel-buttons {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .button-arrow,
+    .indicator-button {
+        background: none;
+        border: none;
+        cursor: pointer;
+        /* margin-top: 20px; */
+        color: antiquewhite;
+        margin: 16px 0;
+        width: 25px;
+    }
+
+    .indicators {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .projectTitle {
+        padding-right: 16px;
+        font-size: 1.5rem;
+    }
+
+    .project-details p,
+    h2,
+    .projectLink {
+        margin: 0;
+        padding-bottom: 8px;
+        font-size: 1rem;
+        line-height: 1.4;
+    }
+
+    .project-details {
+        padding: 0 20px;
+    }
+
+    .inner {
+        justify-content: flex-start;
+    }
+
+
+
 }
 
 
@@ -612,7 +686,7 @@ h2,
 
     .navRight,
     .navLeft {
-        font-size: .6em;
+        font-size: .7em;
     }
 
     .footer,
@@ -627,6 +701,8 @@ h2,
     .portfolioProjects {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .project {
@@ -662,10 +738,23 @@ h2,
         max-width: 450px;
     }
 
+
+    .projectPage {
+        margin-top: 1%;
+        margin-bottom: 5%;
+    }
+
+    .carousel {
+        margin-top: 2%;
+    }
+
+
+
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
     .animateText {
         max-width: 450px;
     }
+
 }

@@ -2,12 +2,14 @@ import React, { useState } from "react";
 import { CarouselItem } from "./CarouselItem";
 import { projects } from "../data"
 import { useParams } from 'react-router-dom';
+import { Swipeable } from 'react-swipeable';
 
 export const Carousel = () => {
     const { id } = useParams();
     const project = projects.find((project) => project.id === parseInt(id));
 
     const [activeIndex, setActiveIndex] = useState(0)
+    const [touchStartX, setTouchStartX] = useState(null);
 
     const updateIndex = (newIndex) => {
         if (newIndex < 0) {
@@ -19,15 +21,42 @@ export const Carousel = () => {
         setActiveIndex(newIndex)
     }
 
+
+    const handleTouchStart = (event) => {
+        setTouchStartX(event.touches[0].clientX);
+    }
+
+    const handleTouchEnd = (event) => {
+        if (touchStartX !== null) {
+            const touchEndX = event.changedTouches[0].clientX;
+            const deltaX = touchEndX - touchStartX;
+
+            if (deltaX > 50) { // Adjust the threshold as needed
+                updateIndex(activeIndex - 1); // Swipe right
+            } else if (deltaX < -50) { // Adjust the threshold as needed
+                updateIndex(activeIndex + 1); // Swipe left
+            }
+
+            setTouchStartX(null);
+        }
+    }
+
     return (
         <div className="singleProject">
 
             <div className="carousel">
-                <div className="inner" style={{ transform: `translate(-${activeIndex * 100}%)` }}>
-                    {project.images.map((image, index) => {
-                        return <CarouselItem key={image.id} image={image} width={"100%"} />
-                    })}
-                </div>
+
+                    <div 
+                    className="inner" 
+                    style={{ transform: `translate(-${activeIndex * 100}%` }}
+                    onTouchStart={handleTouchStart}
+                    onTouchEnd={handleTouchEnd}
+                    >
+                        {project.images.map((image, index) => {
+                            return <CarouselItem key={image.id} image={image} width={"100%"} />
+                        })}
+                    </div>
+
                 <div className="carousel-buttons">
                     <button onClick={() => updateIndex(activeIndex - 1)} className="button-arrow"><span className={`material-symbols-outlined`}>
                         arrow_back_ios
@@ -48,6 +77,8 @@ export const Carousel = () => {
                     </span></button>
                 </div>
             </div >
-        </div>
+        </div >
     )
 }
+
+export default Carousel;
