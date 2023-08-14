@@ -14,8 +14,10 @@ export const projects = [
             '/images/GoVibe_6.png',
             '/images/GoVibe_7.png',
         ],
-        about: "Simplified the process of finding new activities to do nearby, allowing the user ability to create an itinerary for today or add to favorite list to for search or sort later. Developed an interactive and seamless interface with a team of 6, using React Native, CSS, Ruby on Rails and API. Designed splash screen animation, navigation and ensured compliance with ADA guidelines for colors",
-        role: "Front-End Developer and UX/UI Designer"
+        about: "Simplified the process of finding activities to do nearby. GoVibe allows the user to create an itinerary for the day, which can be shared with friends, or add to a favorite list which is searchable and sortable for later. Designed and developed splash screen animation, navigation, UX/UI and ensured compliance with ADA guidelines. Created with a team of 6 using React Native, CSS, Ruby on Rails and API's.",
+        role: "Front-End Developer and UX/UI Designer",
+        link: "",
+        linkTitle: ""
     },
     {
         title: "Grandad's Tech",
@@ -27,8 +29,10 @@ export const projects = [
             '/images/Grandad_2.png',
             '/images/Grandad_3.png',
         ],
-        about: "Collaborated with a team of 4 on design and development of an end-to-end e-commerce website. Selling good quality nostalgic tech products. Developed and designed using PERN stack. Executed UX/UI design concepts to ensure smooth and visually appealing user experience.",
-        role: "Fullstack Developer and UX/UI Designer"
+        about: "Collaborated with a team of 4 on design and development of an end-to-end e-commerce website using the PERN stack. Grandad's Tech sells quality nostalgic tech products. Designed and developed UX/UI design concepts to ensure smooth and visually appealing user experience as well as the product page.",
+        role: "Fullstack Developer and UX/UI Designer",
+        link: "https://graceshopper-ogjq.onrender.com/",
+        linkTitle: "Deployed Website"
     },
     {
         title: "The Ranch",
@@ -36,14 +40,16 @@ export const projects = [
         description: "UX / UI Design Update",
         image: '/images/TheRanch_4.jpg',
         images: [
-            '/images/TheRanch_1.jpg',
-            '/images/TheRanch_2.jpg',
-            '/images/TheRanch_3.jpg',
+            '/images/TheRanch_1.png',
+            '/images/TheRanch_2.png',
+            '/images/TheRanch_3.png',
             '/images/TheRanch_4.jpg',
-            '/images/TheRanch_5.jpg',
+            '/images/TheRanch_5.png',
         ],
-        about: "Designed wireframes and prototypes optimized for a range of devices. Addressed user pain points of websites to improve engagement and user satisfaction. Honed skills in user-centered design, information architecture, and responsive design principles",
-        role: "UX/UI Designer"
+        about: "Analyzed and addressed user pain points of existing website to improve engagement and functionality. Designed wireframes mockups in Figma optimized for a range of devices. Communicated with developer and client to ensure expectations and deadlines were met.",
+        role: "UX/UI Designer",
+        link: "https://theranch.art/",
+        linkTitle: "The Ranch Website"
     },
     {
         title: "Neighborly",
@@ -57,7 +63,7 @@ export const projects = [
             '/images/Neighborly_4.jpg',
             '/images/Neighborly_5.png',
         ],
-        about: "Neighborly strives to make it easy for people to find local businesses. Whether new to a community, interested in saving the environment or a desire to support small shops, Neighborly fills the gap to guide likeminded people around their neighborhoods. ",
+        about: "Neighborly strives to make it easy for people to find local businesses and build community. Concept forumulated during UX certificate bootcamp - performed competitor research, user journey maps, user personas, wireframes and prototypes in Figma. ",
         role: "UX/UI Designer"
     },
     {
@@ -71,7 +77,7 @@ export const projects = [
             '/images/SB_3.png',
             '/images/SB_4.png',
         ],
-        about: "Seasons Bloom strives to give the user a simple and enjoyable flower ordering experience, targeting the unsure occasional buyer as well as a refined, subscription based buyer. ",
+        about: "Seasons Bloom strives to give the user a simple and enjoyable flower ordering experience, targeting the unsure occasional buyer as well as a refined, subscription based buyer. Concept forumulated during UX certificate bootcamp - performed competitor research, user journey maps, user personas, wireframes and prototypes in Figma. ",
         role: "UX/UI Designer"
     },
     {
@@ -95,8 +101,10 @@ export const projects = [
             "/images/Mos_Lowry1.jpeg",
             "/images/Mos_Lowry2.jpeg"
         ],
-        about: "Interior Designer and Project Manager at Matters of Space",
-        role: "Associate Interior Designer"
+        about: "Worked closely with principal interior designer primarily on residential remodels and custom decor projects. Facilitated project management and design of 3-5 projects concurrently, ensuring smooth communication between the woodshop team, vendors, contractors, and clients. Participated in all aspects of the design process such as sending purchase orders, client invoicing, material selection, and drafting - furniture plans, electrical plans, kitchen and bath elevations, and custom furniture details.",
+        role: "Associate Interior Designer and Project Manager",
+        link: "https://www.mattersofspace.com/",
+        linkTitle: "Matters of Space Website"
     },
     {
         title: "Aberizk Store",
@@ -104,12 +112,14 @@ export const projects = [
         description: "Interior Design",
         image: '/images/Aberizk_2.jpeg',
         images: [
-            '/images/Aberizk_1.jpeg',
             '/images/Aberizk_2.jpeg',
+            '/images/Aberizk_1.jpeg',
             '/images/Aberizk_3.jpeg',
             '/images/Aberizk_4.jpeg'
         ],
         about: "Remodeled a storage space into an independent designer and vintage store in NYC- maximized display potential, user flow and adhered to ADA standards. Designed the storefront, custom register and clothing racks in collaboration with the owners vision for their first brick and mortar store.",
-        role: "Associate Interior Designer"
+        role: "Interior Designer",
+        link: "https://aberizk.com/",
+        linkTitle: "Aberizk Website"
     },
 ]

@@ -189,31 +189,30 @@ import { Carousel } from "./Carousel"
 export default function SingleProject() {
     const { id } = useParams();
 
-    const [activeIndex, setActiveIndex] = useState(0)
-
     const project = projects.find((project) => project.id === parseInt(id));
 
     if (!project) {
         return <div>Project not found</div>;
     }
 
-    const updateIndex = (newIndex) => {
-        if (newIndex < 0) {
-            newIndex = 0;
-        }
-        else if (newIndex >= project.length) {
-            newIndex = project.length - 1
-        }
-
-        setActiveIndex(newIndex)
-    }
-
     return (
-        <div className="projectPage">
-
-            <div>
-                <Carousel />
+        <div>
+            <Navbar />
+            <div className="projectPage" >
+                <div data-aos="fade-right" className="project-details">
+                    <div className="projectHeader">
+                        <h2 className="projectTitle">{project.title}</h2>
+                    </div>
+                    <p className="projectRole"><span className="bold">Role:</span> <br></br>{project.role}</p>
+                    <p><span className="bold">Overview:</span> <br></br>{project.about}</p>
+                    <p><span className="bold">Link:</span> <br></br></p>
+                    <a className="projectLink" target="_blank" href={project.link}>{project.linkTitle}</a>
+                </div>
+                <div data-aos="fade-left">
+                    <Carousel />
+                </div>
             </div>
+            <Footer />
         </div>
     );
 }
