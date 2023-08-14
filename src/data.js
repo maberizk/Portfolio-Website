@@ -63,8 +63,10 @@ export const projects = [
             '/images/Neighborly_4.jpg',
             '/images/Neighborly_5.png',
         ],
-        about: "Neighborly strives to make it easy for people to find local businesses and build community. Concept forumulated during UX certificate bootcamp - performed competitor research, user journey maps, user personas, wireframes and prototypes in Figma. ",
-        role: "UX/UI Designer"
+        about: "Neighborly strives to make it easy for people to find local businesses and build community. Concept forumulated during UX certificate bootcamp - performed competitor research, user journey maps, user personas, wireframes and prototypes in Adobe XD. ",
+        role: "UX/UI Designer",
+        link: "https://xd.adobe.com/view/f2dd095d-9235-4424-84e3-b2df90550444-a78e/?fullscreen&hints=on",
+        linkTitle: "Neighborly Prototype"
     },
     {
         title: "Seasons Bloom",
@@ -78,7 +80,9 @@ export const projects = [
             '/images/SB_4.png',
         ],
         about: "Seasons Bloom strives to give the user a simple and enjoyable flower ordering experience, targeting the unsure occasional buyer as well as a refined, subscription based buyer. Concept forumulated during UX certificate bootcamp - performed competitor research, user journey maps, user personas, wireframes and prototypes in Figma. ",
-        role: "UX/UI Designer"
+        role: "UX/UI Designer",
+        link: "https://www.figma.com/proto/9LXTnyMtr1pvkdNoHrt9d9/FLOWERS?page-id=602%3A202&type=design&node-id=648-650&viewport=670%2C464%2C0.15&t=9hYEK14MAUpnw8Yj-1&scaling=scale-down&starting-point-node-id=648%3A650&mode=design",
+        linkTitle: "Seasons Bloom Prototype"
     },
     {
         title: "Matters of Space",
