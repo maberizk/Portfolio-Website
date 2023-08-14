@@ -204,12 +204,16 @@ export default function SingleProject() {
                         <h2 className="projectTitle">{project.title}</h2>
                     </div>
                     <p className="projectRole"><span className="bold">Role:</span> <br></br>{project.role}</p>
+                    <br></br>
                     <p><span className="bold">Overview:</span> <br></br>{project.about}</p>
+                    <br></br>
                     <p><span className="bold">Link:</span> <br></br></p>
                     <a className="projectLink" target="_blank" href={project.link}>{project.linkTitle}</a>
                 </div>
                 <div data-aos="fade-left">
-                    <Carousel />
+                    <div style={{ maxWidth: '100vw', overflow: 'hidden' }}>
+                        <Carousel />
+                    </div>
                 </div>
             </div>
             <Footer />
