@@ -6,11 +6,17 @@ const htmlPlugin = new HtmlWebPackPlugin({
 
 module.exports = {
     entry: ["./src/index.js"],
+    // output: {
+    //     path: __dirname + '/public',
+    //     filename: 'bundle.js',
+    //     publicPath: '/',
+    // },
     output: {
-        path: __dirname + '/public',
-        filename: 'bundle.js',
+        path: __dirname + './build',
+        filename: '[name].bundle.js',
         publicPath: '/',
     },
+
     mode: "development",
     devtool: "source-map",
     context: __dirname,
