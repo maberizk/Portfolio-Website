@@ -9,7 +9,9 @@ import oceanImg from "../../public/images/Ocean.jpg";
 
 
 const Homepage = () => {
+    const animationRef = useRef(null);
     useEffect(() => {
+
         let animation = document.querySelector(".animateText")
 
         // turning each letter into its own span
@@ -18,7 +20,7 @@ const Homepage = () => {
             console.log(animation)
         }
         // vertical movement 
-        anime.timeline({ loop: true })
+        animationRef.current = anime.timeline({ loop: true })
             .add({
                 targets: '.animateText .letter',
                 translateY: [100, 0],
@@ -35,6 +37,12 @@ const Homepage = () => {
                 duration: 1400,
                 delay: (el, i) => 100 + 30 * i
             });
+        return () => {
+            if (animationRef.current) {
+                animationRef.current.pause();
+                animationRef.current = null;
+            }
+        }
     }, [])
 
 

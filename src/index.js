@@ -7,6 +7,7 @@ import About from "./components/About";
 import SingleProject from "./components/SingleProject";
 import ErrorBoundary from "./components/ErrorBoundary.jsx";
 
+
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -23,7 +24,7 @@ const Main = () => {
                 <ErrorBoundary fallback={"Error, refresh page"}>
                     <main>
                         <Routes>
-                            <Route path="/" element={<Homepage />} />
+                            <Route path="*" element={<Homepage />} />
                             <Route path="/portfolio" element={<Portfolio />} />
                             <Route path="/portfolio/:id" element={<SingleProject />} />
                             <Route path="/about" element={<About />} />
