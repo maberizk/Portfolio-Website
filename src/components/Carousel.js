@@ -1,8 +1,6 @@
 import React, { useState } from "react";
-// import { CarouselItem } from "./CarouselItem";
 import { projects } from "../data"
 import { useParams } from 'react-router-dom';
-import { Swipeable } from 'react-swipeable';
 
 export const Carousel = () => {
     const { id } = useParams();
@@ -21,7 +19,7 @@ export const Carousel = () => {
         setActiveIndex(newIndex)
     }
 
-
+    // swiping logic for mobile 
     const handleTouchStart = (event) => {
         setTouchStartX(event.touches[0].clientX);
     }
@@ -31,10 +29,10 @@ export const Carousel = () => {
             const touchEndX = event.changedTouches[0].clientX;
             const deltaX = touchEndX - touchStartX;
 
-            if (deltaX > 50) { // Adjust the threshold as needed
-                updateIndex(activeIndex - 1); // Swipe right
-            } else if (deltaX < -50) { // Adjust the threshold as needed
-                updateIndex(activeIndex + 1); // Swipe left
+            if (deltaX > 50) {
+                updateIndex(activeIndex - 1);
+            } else if (deltaX < -50) {
+                updateIndex(activeIndex + 1);
             }
 
             setTouchStartX(null);

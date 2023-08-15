@@ -21,7 +21,7 @@ const Main = () => {
     return (
         <Router>
             <div>
-                <ErrorBoundary fallback={"Error, refresh page"}>
+                <ErrorBoundary className="error" fallback={"Error"}>
                     <main>
                         <Routes>
                             <Route path="*" element={<Homepage />} />

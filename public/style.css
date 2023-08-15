@@ -10,6 +10,10 @@ body {
     --deepBlue: rgb(4, 79, 98);
 }
 
+.error {
+    color: antiquewhite;
+}
+
 /* home page  */
 .backgroundImg {
     height: 100%;
@@ -46,7 +50,7 @@ body {
     align-items: center;
     height: 50vh;
     width: 100%;
-    max-width: 1000px;
+    max-width: 470px;
     margin: 0 auto;
     text-align: center;
 }
@@ -178,23 +182,8 @@ body {
     width: 450px;
     height: 600px;
     object-fit: fill;
-    /* border-right: 1px solid antiquewhite;
-    border-left: 1px solid antiquewhite;
-    border-bottom: 1px solid antiquewhite;
-    padding: 3%; */
 }
 
-.bottomSheet {
-    position: absolute;
-    bottom: -100%;
-    /* Initially off-screen */
-    left: 0;
-    width: 100%;
-    background-color: white;
-    transition: bottom 0.3s ease-in-out;
-    transform-origin: bottom;
-    z-index: 1;
-}
 
 .open {
     bottom: 0;
@@ -271,9 +260,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* border: 1px solid antiquewhite; */
-    /* width: 800px;
-    height: 800px; */
 }
 
 .projectPage {
@@ -283,10 +269,8 @@ body {
     justify-content: center;
     flex-direction: row;
     align-items: normal;
-    /* height: 90vh; */
     margin-top: 2%;
     margin-bottom: 5%;
-    /* border: 1px solid antiquewhite */
 }
 
 .carousel {
@@ -321,14 +305,6 @@ body {
 
 }
 
-/* .singleProject_images {
-    width: auto;
-    height: 490px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #ffff;
-} */
 
 .singleProject_info {
     display: flex;
@@ -349,7 +325,6 @@ body {
     display: flex;
     flex-direction: row;
     align-items: baseline;
-    /* justify-content: space-between; */
 }
 
 .projectTitle {
@@ -375,26 +350,6 @@ h2,
     color: antiquewhite;
 }
 
-/* .singleProject_header {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    padding: 1%;
-} */
-
-/* .singleProject {
-    overflow: hidden;
-    width: 100%;
-    padding: 0 2%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.indicatorButton:active {
-    color: #ffff;
-} */
-
 .carousel-buttons {
     display: flex;
     justify-content: space-evenly;
@@ -405,7 +360,6 @@ h2,
     background: none;
     border: none;
     cursor: pointer;
-    /* margin-top: 20px; */
     color: antiquewhite;
     margin: 16px 0;
 }
@@ -563,9 +517,8 @@ h2,
 
     /* home */
 
-    .animateText {
-        font-size: 1.5em;
-        max-width: 270px;
+    .animationContainer {
+        max-width: 170px;
     }
 
     /* Footer */
