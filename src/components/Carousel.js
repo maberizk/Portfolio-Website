@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { CarouselItem } from "./CarouselItem";
+// import { CarouselItem } from "./CarouselItem";
 import { projects } from "../data"
 import { useParams } from 'react-router-dom';
 import { Swipeable } from 'react-swipeable';
@@ -46,16 +46,16 @@ export const Carousel = () => {
 
             <div className="carousel">
 
-                    <div 
-                    className="inner" 
+                <div
+                    className="inner"
                     style={{ transform: `translate(-${activeIndex * 100}%` }}
                     onTouchStart={handleTouchStart}
                     onTouchEnd={handleTouchEnd}
-                    >
-                        {project.images.map((image, index) => {
-                            return <CarouselItem key={image.id} image={image} width={"100%"} />
-                        })}
-                    </div>
+                >
+                    {project.images.map((image, index) => {
+                        return <img className="carousel-img" key={index} src={image} alt={image} />
+                    })}
+                </div>
 
                 <div className="carousel-buttons">
                     <button onClick={() => updateIndex(activeIndex - 1)} className="button-arrow"><span className={`material-symbols-outlined`}>
@@ -64,11 +64,14 @@ export const Carousel = () => {
                     <div className="indicators">
                         {project.images.map((image, index) => {
                             return (
-                                <button className="indicator-button" onClick={() => {
-                                    updateIndex(index)
-                                }}><span className={`material-symbols-outlined ${index === activeIndex ? "indicator-symbol-active" : "indicator-symbol"}`}>
+                                <button
+                                    key={index}
+                                    className="indicator-button"
+                                    onClick={() => { updateIndex(index) }}>
+                                    <span className={`material-symbols-outlined ${index === activeIndex ? "indicator-symbol-active" : "indicator-symbol"}`}>
                                         radio_button_unchecked
-                                    </span></button>
+                                    </span>
+                                </button>
                             )
                         })}
                     </div>

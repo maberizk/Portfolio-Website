@@ -7,33 +7,37 @@ import Footer from "./Footer";
 import oceanImg from "../../public/images/Ocean.jpg";
 
 
+
 const Homepage = () => {
+    useEffect(() => {
+        let animation = document.querySelector(".animateText")
 
-    // useEffect(() => {
-    //     let div = document.querySelector(".animateText")
+        // turning each letter into its own span
+        animation.innerHTML = animation.textContent.replace(/(\S)/g, "<span class='letter'>$1</span>");
+        {
+            console.log(animation)
+        }
+        // vertical movement 
+        anime.timeline({ loop: true })
+            .add({
+                targets: '.animateText .letter',
+                translateY: [100, 0],
+                translateZ: 0,
+                opacity: [0, 1],
+                easing: "easeOutExpo",
+                duration: 1600,
+                delay: (el, i) => 300 + 30 * i
+            }).add({
+                targets: '.animateText .letter',
+                translateY: [0, -100],
+                opacity: [1, 0],
+                easing: "easeInExpo",
+                duration: 1400,
+                delay: (el, i) => 100 + 30 * i
+            });
+    }, [])
 
-    //         // turning each letter into its own span
-    //         div.innerHTML = div.textContent.replace(/(\S)/g, "<span class='letter' style='display: inline-block'>$1</span>");
 
-    //         // vertical movement 
-    //         anime.timeline({ loop: true })
-    //             .add({
-    //                 targets: '.animateText .letter',
-    //                 translateY: [100, 0],
-    //                 translateZ: 0,
-    //                 opacity: [0, 1],
-    //                 easing: "easeOutExpo",
-    //                 duration: 1600,
-    //                 delay: (el, i) => 300 + 30 * i
-    //             }).add({
-    //                 targets: '.animateText .letter',
-    //                 translateY: [0, -100],
-    //                 opacity: [1, 0],
-    //                 easing: "easeInExpo",
-    //                 duration: 1400,
-    //                 delay: (el, i) => 100 + 30 * i
-    //             });
-    // }, [])
 
     // horizontal movement 
 

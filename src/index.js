@@ -20,16 +20,16 @@ const Main = () => {
     return (
         <Router>
             <div>
-                <main>
-                    <Routes>
-                        {/* <ErrorBoundary> */}
+                <ErrorBoundary fallback={"Error, refresh page"}>
+                    <main>
+                        <Routes>
                             <Route path="/" element={<Homepage />} />
-                        {/* </ErrorBoundary> */}
-                        <Route path="/portfolio" element={<Portfolio />} />
-                        <Route path="/portfolio/:id" element={<SingleProject />} />
-                        <Route path="/about" element={<About />} />
-                    </Routes>
-                </main>
+                            <Route path="/portfolio" element={<Portfolio />} />
+                            <Route path="/portfolio/:id" element={<SingleProject />} />
+                            <Route path="/about" element={<About />} />
+                        </Routes>
+                    </main>
+                </ErrorBoundary>
             </div>
         </Router>
     )
