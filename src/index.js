@@ -5,8 +5,7 @@ import Homepage from "./components/Homepage";
 import Portfolio from "./components/Portfolio";
 import About from "./components/About";
 import SingleProject from "./components/SingleProject";
-
-
+import ErrorBoundary from "./components/ErrorBoundary.jsx";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -23,7 +22,9 @@ const Main = () => {
             <div>
                 <main>
                     <Routes>
-                        <Route path="/" element={<Homepage />} />
+                        {/* <ErrorBoundary> */}
+                            <Route path="/" element={<Homepage />} />
+                        {/* </ErrorBoundary> */}
                         <Route path="/portfolio" element={<Portfolio />} />
                         <Route path="/portfolio/:id" element={<SingleProject />} />
                         <Route path="/about" element={<About />} />
