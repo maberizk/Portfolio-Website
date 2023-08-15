@@ -10,14 +10,14 @@ export const projects = [
             '/images/GoVibe_2.png',
             '/images/GoVibe_3.png',
             '/images/GoVibe_4.png',
-            '/images/GoVibe_5.png',
+            '/images/GoVIbe_5.png',
             '/images/GoVibe_6.png',
             '/images/GoVibe_7.png',
         ],
         about: "Simplified the process of finding activities to do nearby. GoVibe allows the user to create an itinerary for the day, which can be shared with friends, or add to a favorite list which is searchable and sortable for later. Designed and developed splash screen animation, navigation, UX/UI and ensured compliance with ADA guidelines. Created with a team of 6 using React Native, CSS, Ruby on Rails and API's.",
         role: "Front-End Developer and UX/UI Designer",
-        link: "",
-        linkTitle: ""
+        link: "https://www.youtube.com/watch?v=nXwXDha69TY",
+        linkTitle: "GoVibe Trailer"
     },
     {
         title: "Grandad's Tech",
