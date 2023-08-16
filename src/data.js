@@ -14,7 +14,7 @@ export const projects = [
             '/images/GoVibe_6.png',
             '/images/GoVibe_7.png',
             '/images/GoVibe_Inspo.png',
-            '/images/GoVibe_WireFrames.png'
+            '/images/GoVibe_Wireframes.png'
         ],
         about: "Simplified the process of finding activities to do nearby. GoVibe allows the user to create an itinerary for the day, which can be shared with friends, or add to a favorite list which is searchable and sortable for later. Designed and developed splash screen animation, navigation, UX/UI and ensured compliance with ADA guidelines. Created with a team of 6 using React Native, CSS, Ruby on Rails and API's.",
         role: "Front-End Developer and UX/UI Designer",
