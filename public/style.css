@@ -137,7 +137,7 @@ body {
     font-size: 4.5em;
     text-transform: uppercase;
     letter-spacing: 0.3em;
-    color: antiquewhite;
+    color: #faebd7;
     margin: 2% 2% 0 2%;
 }
 
@@ -480,7 +480,7 @@ h2,
         display: none;
         flex-direction: column;
         align-items: flex-start;
-        background-color: rgb(4, 79, 98);
+        background-color: #044f62;
         top: 1%;
         margin-left: 3%;
         color: antiquewhite

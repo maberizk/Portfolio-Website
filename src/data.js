@@ -13,6 +13,8 @@ export const projects = [
             '/images/GoVIbe_5.png',
             '/images/GoVibe_6.png',
             '/images/GoVibe_7.png',
+            '/images/GoVibe_Inspo.png',
+            '/images/GoVibe_WireFrames.png'
         ],
         about: "Simplified the process of finding activities to do nearby. GoVibe allows the user to create an itinerary for the day, which can be shared with friends, or add to a favorite list which is searchable and sortable for later. Designed and developed splash screen animation, navigation, UX/UI and ensured compliance with ADA guidelines. Created with a team of 6 using React Native, CSS, Ruby on Rails and API's.",
         role: "Front-End Developer and UX/UI Designer",
@@ -28,6 +30,10 @@ export const projects = [
             '/images/Grandad_1.png',
             '/images/Grandad_2.png',
             '/images/Grandad_3.png',
+            '/images/Grandad_Wireframes.png',
+            '/images/Grandads_Models.png',
+            '/images/Grandads_Inspo.png',
+            '/images/Grandads_Colors.png'
         ],
         about: "Collaborated with a team of 4 on design and development of an end-to-end e-commerce website using the PERN stack. Grandad's Tech sells quality nostalgic tech products. Designed and developed UX/UI design concepts to ensure smooth and visually appealing user experience as well as the product page.",
         role: "Fullstack Developer and UX/UI Designer",
@@ -61,7 +67,7 @@ export const projects = [
             '/images/Neighborly_2.jpg',
             '/images/Neighborly_3.jpg',
             '/images/Neighborly_4.jpg',
-            '/images/Neighborly_5.png',
+            // '/images/Neighborly_5.png',
         ],
         about: "Neighborly strives to make it easy for people to find local businesses and build community. Concept forumulated during UX certificate bootcamp - performed competitor research, user journey maps, user personas, wireframes and prototypes in Adobe XD. ",
         role: "UX/UI Designer",
