@@ -35,7 +35,7 @@ export const projects = [
             '/images/Grandads_Inspo.png',
             '/images/Grandads_Colors.png'
         ],
-        about: "Collaborated with a team of 4 on design and development of an end-to-end e-commerce website using the PERN stack. Grandad's Tech sells quality nostalgic tech products. Designed and developed UX/UI design concepts to ensure smooth and visually appealing user experience as well as the product page.",
+        about: "Collaborated with a team of 4 on design and development of an end-to-end e-commerce website using the PERN stack. Grandad's Tech sells quality nostalgic tech products, complete with an admin portal to create, edit and delete products. Designed and developed UX/UI design concepts to ensure smooth and visually appealing user experience as well as the product page.",
         role: "Fullstack Developer and UX/UI Designer",
         link: "https://graceshopper-ogjq.onrender.com/",
         linkTitle: "Deployed Website"
