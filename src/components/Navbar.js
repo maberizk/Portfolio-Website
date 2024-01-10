@@ -3,39 +3,45 @@ import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 
 const Navbar = () => {
-    const location = useLocation();
-    const isHomepage = location.pathname === "/";
+  const location = useLocation();
+  const isHomepage = location.pathname === "/";
 
-    const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
 
-    return (
-        <nav data-aos="fade-down" className={isHomepage ? "navigation" : "navWhite"}>
-            <div className="navLeft">
-                <h1><Link to="/"
-                    className={`${isHomepage ? "link" : "linkWhite"}`}
-                >Michelle Aberizk</Link></h1>
-            </div>
+  return (
+    <nav data-aos="fade-down" className="navigation">
+      <div className="navLeft">
+        <h1>
+          <Link to="/" className="link">
+            Michelle Aberizk
+          </Link>
+        </h1>
+      </div>
 
-            <div className={`navRight ${isOpen ? "active" : ""}`}>
-                <h1>
-                    <Link to="/portfolio" id="link" className={`${isHomepage ? "link" : "linkWhite"}`} >
-                        Portfolio
-                    </Link></h1>
+      <div className={`navRight ${isOpen ? "active" : ""}`}>
+        <h1>
+          <Link to="/portfolio" id="link" className="link">
+            Portfolio
+          </Link>
+        </h1>
 
-                <h1>
-                    <Link to="/about" id="link" className={`${isHomepage ? "link" : "linkWhite"}`}>
-                        About</Link></h1>
-            </div>
-            <a href="#" className={`toggle-button ${isOpen ? "open" : ""}`} onClick={() => setIsOpen(!isOpen)}>
-
-                <span className={`bar ${isHomepage ? "" : "barWhite"}`}></span>
-                <span className={`bar ${isHomepage ? "" : "barWhite"}`}></span>
-                <span className={`bar ${isHomepage ? "" : "barWhite"}`}></span>
-            </a>
-        </nav >
-    )
-}
+        <h1>
+          <Link to="/about" id="link" className="link">
+            About
+          </Link>
+        </h1>
+      </div>
+      <a
+        href="#"
+        className={`toggle-button ${isOpen ? "open" : ""}`}
+        onClick={() => setIsOpen(!isOpen)}
+      >
+        <span className={`bar ${isHomepage ? "" : "barWhite"}`}></span>
+        <span className={`bar ${isHomepage ? "" : "barWhite"}`}></span>
+        <span className={`bar ${isHomepage ? "" : "barWhite"}`}></span>
+      </a>
+    </nav>
+  );
+};
 
 export default Navbar;
-
-

@@ -3,27 +3,26 @@ body {
   height: 100%;
   font-family: "Montserrat", sans-serif;
   color: black;
-  background-color: var(--deepBlue);
-  /* background-color: #ece7e1; */
+  background-color: #ece7e1;
 }
 
-/* * {
-  color: black;
-} */
-:root {
-  --deepBlue: rgb(4, 79, 98);
+* {
+  margin: 0;
+  padding: 0;
 }
 
 .error {
-  color: antiquewhite;
+  color: black;
 }
 
 /* home page  */
 .backgroundImg {
-  height: 100%;
+  height: 800px;
   width: 100%;
   position: absolute;
+  top: 0;
   z-index: -1;
+  margin-bottom: 32px;
 }
 
 .link {
@@ -39,7 +38,7 @@ body {
 }
 
 .linkWhite {
-  color: antiquewhite;
+  color: black;
   text-decoration: none;
   padding: 0 1rem;
   font-weight: 100;
@@ -72,35 +71,32 @@ body {
 }
 
 /* footer  */
-
+/* 
 .footer {
-  /* position: absolute; */
+
   text-align: center;
   line-height: 0.5;
   bottom: 0;
   left: 0;
   width: 100%;
-  color: antiquewhite;
+  color: black;
   border-top: 0.5px solid antiquewhite;
   letter-spacing: 0.3rem;
   font-weight: 200;
 }
-
+*/
 .footerColor {
   text-align: center;
-  line-height: 0.5;
-  bottom: 0;
-  left: 0;
   width: 100%;
-  color: antiquewhite;
-  border-top: 0.5px solid antiquewhite;
+  color: black;
   letter-spacing: 0.3rem;
   background-color: var(--deepBlue);
   font-weight: 200;
+  margin: 3%;
 }
 
 .footer_email {
-  margin-top: 1%;
+  margin: 3%;
 }
 
 .socialIcons {
@@ -112,6 +108,11 @@ body {
 }
 
 /* about page  */
+
+.about {
+  padding-left: 32px;
+  margin-bottom: 3%;
+}
 
 .aboutContainer {
   display: flex;
@@ -139,19 +140,26 @@ body {
   font-size: 4.5em;
   text-transform: uppercase;
   letter-spacing: 0.3em;
-  color: #faebd7;
-  margin: 2% 2% 0 2%;
+  color: black;
+  margin: 2% 2% 1% 2%;
 }
 
 .aboutText {
   font-size: 1.5rem;
   font-weight: 200;
-  color: antiquewhite;
+  color: black;
   line-height: 1.4em;
+  width: 925px;
+  display: flex;
+}
+
+.text1 {
+  padding-right: 40px;
+  /* width: 500px; */
 }
 
 .icon {
-  color: antiquewhite;
+  color: black;
   padding: 0 8px 0 0;
 }
 
@@ -165,6 +173,7 @@ body {
 
 .portfolio {
   width: 100%;
+  margin: 3% 0;
 }
 
 .portfolioProjects {
@@ -263,7 +272,7 @@ body {
 }
 
 .projectPage {
-  color: antiquewhite;
+  color: black;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -357,7 +366,7 @@ h2,
   background: none;
   border: none;
   cursor: pointer;
-  color: antiquewhite;
+  color: black;
   margin: 16px 0;
 }
 
@@ -368,11 +377,11 @@ h2,
 }
 
 .indicator-symbol {
-  color: antiquewhite;
+  color: black;
 }
 
 .indicator-symbol-active {
-  color: black;
+  color: red;
 }
 
 /* nav bar  */
@@ -386,7 +395,7 @@ h2,
 .navWhite {
   display: flex;
   justify-content: space-between;
-  border-bottom: 0.5px solid antiquewhite;
+  /* border-bottom: 0.5px solid black; */
 }
 
 .navLeft {
@@ -587,7 +596,7 @@ h2,
     border: none;
     cursor: pointer;
     /* margin-top: 20px; */
-    color: antiquewhite;
+    color: black;
     margin: 16px 0;
     width: 25px;
   }
@@ -723,9 +732,35 @@ h2,
   color: navy;
 }
 
-@media screen and (min-width: 1440px) {
+/* @media screen and (min-width: 1440px) {
   main {
     max-width: 1440px;
-    margin: 0 auto;
+    margin: 0;
   }
+} */
+
+.socialButton {
+  background-color: #ece7e1;
+  border: 1px solid black;
+  color: black;
+  padding: 14px 32px;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  margin: 1%;
+  letter-spacing: 5px;
+  text-decoration: none;
+}
+
+.socialButton:hover {
+  background-color: black;
+  color: #ece7e1;
+}
+
+#noBorder {
+  color: black;
+  padding: 14px 32px;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  margin: 1%;
+  letter-spacing: 5px;
 }

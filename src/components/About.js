@@ -1,39 +1,37 @@
 import React from "react";
-import Navbar from "./Navbar";
-import Footer from "./Footer";
 import michelleNoBG from "../../public/images/michelleBW.png";
 
 export default function About() {
   return (
     <div className="about">
-      {/* <Navbar /> */}
-
-      <h3 data-aos="fade-right" className="aboutHeader">
+      <h3 data-aos="fade-left" className="aboutHeader">
         Hi, I'm Michelle
       </h3>
 
       <div className="aboutContainer">
         <div data-aos="fade-right" className="flexAbout">
           <div className="aboutText">
-            <p>
-              I'm a front-end software engineer based in Los Angeles with a
-              passion for design, structure and efficency. Transitioning from
-              the physical world as an interior designer to the digital world, I
-              am especially interested in building responsive components that
-              are functional while beautiful, animated and interactive.
+            <p className="text1">
+              I'm a frontend software engineer and UX/UI designer based in Los
+              Angeles.
             </p>
-            <p>
+            <p className="text2">
+              Transitioning from the physical world as an interior designer to
+              the digital world, I am passionate about design, structure and
+              efficency. I am interested in building responsive components that
+              are functional, beautiful, and interactive.
+            </p>
+            {/* <p>
               When I'm not coding, you can find me thrifting, sewing, soaking up
               inspiration in nature and museums, or playing lasers with my
               kitties.{" "}
-            </p>
+            </p> */}
           </div>
         </div>
-        <div data-aos="fade-left" className="michelleImgContainer">
+        <div data-aos="fade-down" className="michelleImgContainer">
           <img src={michelleNoBG} className="michelleImg" />
         </div>
       </div>
-      {/* <Footer /> */}
     </div>
   );
 }
