@@ -1,7 +1,7 @@
 import React from "react";
 export default function Contact() {
   return (
-    <div className="footerColor">
+    <div className="contact">
       <a
         href="https://www.linkedin.com/in/michelle-aberizk-99148624/"
         target="_blank"

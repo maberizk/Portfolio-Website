@@ -85,7 +85,7 @@ body {
   font-weight: 200;
 }
 */
-.footerColor {
+.contact {
   text-align: center;
   width: 100%;
   color: black;
@@ -389,7 +389,7 @@ h2,
 .navigation {
   display: flex;
   justify-content: space-between;
-  border-bottom: 0.5px solid black;
+  /* border-bottom: 0.5px solid black; */
 }
 
 .navWhite {
@@ -454,13 +454,76 @@ h2,
   right: 16px;
 }
 
+.homeBlock {
+  background-color: var(--deepBlue);
+  /* width: 50%; */
+  height: 40vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  font-size: 50px;
+  color: antiquewhite;
+  /* border: 1px antiquewhite solid; */
+}
+
+.homeBlock > h1 {
+  margin: 0;
+  letter-spacing: 10px;
+  /* border: 1px antiquewhite solid;s */
+  padding: 0 0 0 5%;
+  /* width: fit-content; */
+}
+
+.homeBlock > h2 {
+  font-size: 40px;
+  font-weight: 100;
+  padding: 2% 6%;
+  /* border: 1px antiquewhite solid; */
+}
+
+.marqueeText:hover {
+  color: navy;
+}
+
+.socialButton {
+  background-color: #ece7e1;
+  border: 1px solid black;
+  color: black;
+  padding: 14px 32px;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  margin: 1%;
+  letter-spacing: 5px;
+  text-decoration: none;
+}
+
+.socialButton:hover {
+  background-color: black;
+  color: #ece7e1;
+}
+
+#noBorder {
+  color: black;
+  padding: 14px 32px;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  margin: 1%;
+  letter-spacing: 5px;
+}
+
 /* responsive web  */
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 694px) {
   .navigation,
   .navWhite {
     display: flex;
     flex-direction: column;
+  }
+
+  .text2 {
+    /* color: white; */
+    mix-blend-mode: difference;
   }
 
   #link {
@@ -470,6 +533,7 @@ h2,
   /* nav */
   .backgroundImg {
     width: 100%;
+    height: 950px;
     object-fit: cover;
   }
 
@@ -570,6 +634,9 @@ h2,
 
   .portfolioProjects {
     z-index: 0;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
   }
 
   .projectCard {
@@ -628,9 +695,38 @@ h2,
   .inner {
     justify-content: flex-start;
   }
+
+  .contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90vw;
+    padding: 0 24px;
+    margin: 32px 0;
+  }
+
+  .aboutText {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .text2 {
+    padding-top: 24px;
+  }
+
+  #noBorder {
+    font-size: small;
+    padding: 0;
+  }
+
+  .about {
+    padding: 0;
+  }
 }
 
-@media screen and (min-width: 481px) and (max-width: 767px) {
+@media screen and (max-width: 694px) {
+  /* 
+@media screen and (max-width: 1000px) { */
   .navRight,
   .navLeft {
     font-size: 0.7em;
@@ -642,7 +738,8 @@ h2,
   }
 
   .backgroundImg {
-    object-fit: cover;
+    /* object-fit: cover; */
+    height: 756px;
   }
 
   .portfolioProjects {
@@ -662,8 +759,13 @@ h2,
     font-size: 3em;
   }
 
+  .flexAbout {
+    padding: 0;
+  }
+
   .aboutText {
     width: 100%;
+    flex-direction: column;
   }
 
   .aboutContainer {
@@ -694,73 +796,13 @@ h2,
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  .animateText {
-    max-width: 450px;
+@media screen and (max-width: 1280px) {
+  .aboutText {
+    width: 100%;
+    flex-direction: column;
   }
-}
 
-.homeBlock {
-  background-color: var(--deepBlue);
-  /* width: 50%; */
-  height: 40vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: start;
-  font-size: 50px;
-  color: antiquewhite;
-  /* border: 1px antiquewhite solid; */
-}
-
-.homeBlock > h1 {
-  margin: 0;
-  letter-spacing: 10px;
-  /* border: 1px antiquewhite solid;s */
-  padding: 0 0 0 5%;
-  /* width: fit-content; */
-}
-
-.homeBlock > h2 {
-  font-size: 40px;
-  font-weight: 100;
-  padding: 2% 6%;
-  /* border: 1px antiquewhite solid; */
-}
-
-.marqueeText:hover {
-  color: navy;
-}
-
-/* @media screen and (min-width: 1440px) {
-  main {
-    max-width: 1440px;
-    margin: 0;
+  .text2 {
+    padding-top: 24px;
   }
-} */
-
-.socialButton {
-  background-color: #ece7e1;
-  border: 1px solid black;
-  color: black;
-  padding: 14px 32px;
-  font-family: "Montserrat", sans-serif;
-  text-transform: uppercase;
-  margin: 1%;
-  letter-spacing: 5px;
-  text-decoration: none;
-}
-
-.socialButton:hover {
-  background-color: black;
-  color: #ece7e1;
-}
-
-#noBorder {
-  color: black;
-  padding: 14px 32px;
-  font-family: "Montserrat", sans-serif;
-  text-transform: uppercase;
-  margin: 1%;
-  letter-spacing: 5px;
 }

@@ -14,20 +14,8 @@ const Homepage = () => {
   return (
     <>
       <>
-        <img src={oceanImg} className="backgroundImg" />
+        {/* <img src={oceanImg} className="backgroundImg" /> */}
         <About />
-        {/* <div className="homeBlock"> */}
-        {/* <Marquee pauseOnHover={true}>
-            <h1 className="marqueeText">Michelle Aberizk Software Engineer</h1>
-            <h1> </h1>
-
-          </Marquee> */}
-        {/* <h1 data-aos="fade-down">Michelle Aberizk</h1> */}
-        {/* <div className="animationContainer">
-            <AnimatedText text="Software Designer + Engineer" />
-        </div> */}
-        {/* <h2 data-aos="fade-up">Software Engineer</h2> */}
-        {/* </div> */}
         <Marquee pauseOnHover={true}>
           <h1 className="aboutHeader">WORK</h1>
         </Marquee>

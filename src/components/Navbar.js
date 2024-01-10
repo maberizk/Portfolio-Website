@@ -13,12 +13,12 @@ const Navbar = () => {
       <div className="navLeft">
         <h1>
           <Link to="/" className="link">
-            Michelle Aberizk
+            HOME
           </Link>
         </h1>
       </div>
 
-      <div className={`navRight ${isOpen ? "active" : ""}`}>
+      {/* <div className={`navRight ${isOpen ? "active" : ""}`}>
         <h1>
           <Link to="/portfolio" id="link" className="link">
             Portfolio
@@ -39,7 +39,7 @@ const Navbar = () => {
         <span className={`bar ${isHomepage ? "" : "barWhite"}`}></span>
         <span className={`bar ${isHomepage ? "" : "barWhite"}`}></span>
         <span className={`bar ${isHomepage ? "" : "barWhite"}`}></span>
-      </a>
+      </a> */}
     </nav>
   );
 };
