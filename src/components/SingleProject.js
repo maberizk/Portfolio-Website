@@ -54,11 +54,9 @@
 
 import React from "react";
 import Navbar from "./Navbar";
-import Footer from "./Footer";
 import { projects } from "../data";
 import { useParams } from "react-router-dom";
 import { Carousel } from "./Carousel";
-import Contact from "./Contact";
 import Marquee from "react-fast-marquee";
 
 export default function SingleProject() {
@@ -78,9 +76,6 @@ export default function SingleProject() {
           <h2 className="project-title">{project.title}</h2>
         </Marquee>
         <div data-aos="fade-right" className="project-details">
-          {/* <div className="projectHeader">
-            <h2 className="projectTitle">{project.title}</h2>
-          </div> */}
           <p className="projectRole projectText">
             <span className="bold">Role:</span> <br></br>
             {project.role}
@@ -102,8 +97,23 @@ export default function SingleProject() {
             </a>
           </p>
         </div>
+
+        {/* <div data-aos="fade-down">
+          {project.images.map((image, index) => {
+            return (
+              <img
+                // className="carousel-img"
+                key={index}
+                src={image}
+                alt={image}
+              />
+            );
+          })}
+        </div> */}
+
         <div data-aos="fade-left">
           <div style={{ maxWidth: "100vw", overflow: "hidden" }}>
+            
             <Carousel />
           </div>
         </div>

@@ -21,11 +21,6 @@ export default function About() {
               efficency. I am interested in building responsive components that
               are functional, beautiful, and interactive.
             </p>
-            {/* <p>
-              When I'm not coding, you can find me thrifting, sewing, soaking up
-              inspiration in nature and museums, or playing lasers with my
-              kitties.{" "}
-            </p> */}
           </div>
         </div>
         <div data-aos="fade-down" className="michelleImgContainer">
