@@ -13,6 +13,7 @@ const Navbar = () => {
       <div className="navLeft">
         <h1>
           <Link to="/" className="link">
+            <span className={`material-symbols-outlined`}>arrow_back_ios</span>
             HOME
           </Link>
         </h1>

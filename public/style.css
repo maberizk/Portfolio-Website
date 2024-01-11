@@ -16,24 +16,83 @@ body {
 }
 
 /* home page  */
-.backgroundImg {
+/* .backgroundImg {
   height: 800px;
   width: 100%;
   position: absolute;
   top: 0;
   z-index: -1;
   margin-bottom: 32px;
-}
+} */
 
 .link {
   color: black;
   text-decoration: none;
   padding: 0 1rem;
   font-weight: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid black; */
 }
 
 .link:hover {
   font-weight: 400;
+}
+
+.homeBlock {
+  background-color: var(--deepBlue);
+  /* width: 50%; */
+  height: 40vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  font-size: 50px;
+  color: antiquewhite;
+  /* border: 1px antiquewhite solid; */
+}
+
+.homeBlock > h1 {
+  margin: 0;
+  letter-spacing: 10px;
+  padding: 0 0 0 5%;
+}
+
+.homeBlock > h2 {
+  font-size: 40px;
+  font-weight: 100;
+  padding: 2% 6%;
+}
+
+.marqueeText:hover {
+  color: navy;
+}
+
+.socialButton {
+  background-color: #ece7e1;
+  border: 1px solid black;
+  color: black;
+  padding: 14px 32px;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  margin: 1%;
+  letter-spacing: 5px;
+  text-decoration: none;
+}
+
+.socialButton:hover {
+  background-color: black;
+  color: #ece7e1;
+}
+
+#noBorder {
+  color: black;
+  padding: 14px 32px;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  margin: 1%;
+  letter-spacing: 5px;
 }
 
 /* .linkWhite {
@@ -278,7 +337,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  flex-direction: row;
+  flex-direction: column;
   align-items: normal;
   margin-top: 2%;
   margin-bottom: 5%;
@@ -321,12 +380,35 @@ body {
 }
 
 .project-details {
-  width: 600px;
   height: auto;
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  margin-top: 50px;
+  flex-direction: row;
+  justify-content: center;
+  margin: 40px 60px;
+}
+
+.project-title {
+  font-weight: 200;
+  font-size: 4.5em;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  color: black;
+  /* margin: 2% 2% 1% 2%; */
+}
+
+.project-details > p {
+  padding-right: 2%;
+}
+
+.projectOverview {
+  max-width: 700px;
+}
+
+.projectText {
+  /* font-size: 0.6rem; */
+  font-weight: 200;
+  color: black;
+  line-height: 1.4em;
 }
 
 .projectHeader {
@@ -350,12 +432,12 @@ h2,
 }
 
 .bold {
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .projectLink {
   text-decoration: none;
-  color: antiquewhite;
+  color: black;
 }
 
 .carousel-buttons {
@@ -391,13 +473,7 @@ h2,
 .navigation {
   display: flex;
   justify-content: space-between;
-  /* border-bottom: 0.5px solid black; */
-}
-
-.navWhite {
-  display: flex;
-  justify-content: space-between;
-  /* border-bottom: 0.5px solid black; */
+  margin-top: 24px;
 }
 
 .navLeft {
@@ -430,7 +506,7 @@ h2,
 
 /* popup */
 
-.popup {
+/* .popup {
   position: fixed;
   top: 0;
   left: 0;
@@ -454,77 +530,16 @@ h2,
   position: absolute;
   top: 16px;
   right: 16px;
-}
-
-.homeBlock {
-  background-color: var(--deepBlue);
-  /* width: 50%; */
-  height: 40vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: start;
-  font-size: 50px;
-  color: antiquewhite;
-  /* border: 1px antiquewhite solid; */
-}
-
-.homeBlock > h1 {
-  margin: 0;
-  letter-spacing: 10px;
-  /* border: 1px antiquewhite solid;s */
-  padding: 0 0 0 5%;
-  /* width: fit-content; */
-}
-
-.homeBlock > h2 {
-  font-size: 40px;
-  font-weight: 100;
-  padding: 2% 6%;
-  /* border: 1px antiquewhite solid; */
-}
-
-.marqueeText:hover {
-  color: navy;
-}
-
-.socialButton {
-  background-color: #ece7e1;
-  border: 1px solid black;
-  color: black;
-  padding: 14px 32px;
-  font-family: "Montserrat", sans-serif;
-  text-transform: uppercase;
-  margin: 1%;
-  letter-spacing: 5px;
-  text-decoration: none;
-}
-
-.socialButton:hover {
-  background-color: black;
-  color: #ece7e1;
-}
-
-#noBorder {
-  color: black;
-  padding: 14px 32px;
-  font-family: "Montserrat", sans-serif;
-  text-transform: uppercase;
-  margin: 1%;
-  letter-spacing: 5px;
-}
+} */
 
 /* responsive web  */
 
 @media screen and (max-width: 694px) {
-  .navigation,
-  .navWhite {
+  .navigation {
     display: flex;
-    flex-direction: column;
   }
 
   .text2 {
-    /* color: white; */
     mix-blend-mode: difference;
   }
 
@@ -533,11 +548,11 @@ h2,
   }
 
   /* nav */
-  .backgroundImg {
+  /* .backgroundImg {
     width: 100%;
     height: 950px;
     object-fit: cover;
-  }
+  } */
 
   .toggle-button {
     display: flex;
@@ -557,18 +572,18 @@ h2,
     display: flex;
   }
 
-  h1 .navRight.active {
+  /* h1 .navRight.active {
     color: antiquewhite;
-  }
+  } */
 
   .link {
     font-size: large;
   }
 
-  .linkWhite {
+  /* .linkWhite {
     font-size: large;
     color: antiquewhite;
-  }
+  } */
 
   .barWhite.bar {
     height: 1px;
@@ -583,9 +598,9 @@ h2,
 
   /* home */
 
-  .animationContainer {
+  /* .animationContainer {
     max-width: 170px;
-  }
+  } */
 
   /* Footer */
 
@@ -690,8 +705,14 @@ h2,
     line-height: 1.4;
   }
 
+  .project-title {
+    font-size: 2em;
+  }
+
   .project-details {
-    padding: 0 20px;
+    /* padding: 0 20px; */
+    margin: 10px 20px;
+    flex-direction: column;
   }
 
   .inner {
