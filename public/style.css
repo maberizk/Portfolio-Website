@@ -356,7 +356,7 @@ h2,
 }
 
 .indicator-symbol-active {
-  color: red;
+  color: grey;
 }
 
 /* nav bar  */
@@ -391,7 +391,6 @@ h2,
   }
 
   /* nav */
-
 
   .navRight {
     display: none;
