@@ -61,6 +61,7 @@ import Marquee from "react-fast-marquee";
 
 export default function SingleProject() {
   const { id } = useParams();
+  const currentProjectId = parseInt(id);
 
   const project = projects.find((project) => project.id === parseInt(id));
 
@@ -70,9 +71,9 @@ export default function SingleProject() {
 
   return (
     <div>
-      <Navbar />
+      <Navbar currentProjectId={currentProjectId} />
       <div className="projectPage">
-        <Marquee pauseOnHover={true} speed={70}>
+        <Marquee pauseOnHover={true} speed={70} loop={1}>
           <h2 className="project-title">{project.title}</h2>
         </Marquee>
         <div data-aos="fade-right" className="project-details">
@@ -113,7 +114,6 @@ export default function SingleProject() {
 
         <div data-aos="fade-left">
           <div style={{ maxWidth: "100vw", overflow: "hidden" }}>
-            
             <Carousel />
           </div>
         </div>

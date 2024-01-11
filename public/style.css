@@ -142,7 +142,7 @@ body {
 
 .portfolio {
   width: 100%;
-  margin: 3% 0;
+  margin: 4% 0;
 }
 
 .portfolioProjects {
@@ -232,7 +232,7 @@ body {
   justify-content: center;
   flex-direction: column;
   align-items: normal;
-  margin-top: 2%;
+  margin-top: 3%;
   margin-bottom: 5%;
 }
 
@@ -286,6 +286,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.3em;
   color: black;
+  padding-left: 20px;
 }
 
 .project-details > p {
@@ -378,8 +379,14 @@ h2,
 /* responsive web  */
 
 @media screen and (max-width: 694px) {
+  /* nav */
   .navigation {
     display: flex;
+  }
+
+  .navRight,
+  .navLeft {
+    font-size: 0.7em;
   }
 
   .text2 {
@@ -390,24 +397,8 @@ h2,
     color: antiquewhite;
   }
 
-  /* nav */
-
-  .navRight {
-    display: none;
-    flex-direction: column;
-    align-items: flex-start;
-    background-color: #044f62;
-    top: 1%;
-    margin-left: 3%;
-    color: antiquewhite;
-  }
-
-  .navRight.active {
-    display: flex;
-  }
-
-  .link {
-    font-size: large;
+  .homeAbout {
+    margin: 16px;
   }
 
   /* about page */
@@ -422,10 +413,20 @@ h2,
     flex-wrap: wrap;
   }
 
+  .aboutText {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .aboutContainer {
+    margin: 16px;
+  }
+
   .michelleImg {
     padding: 16px;
     height: 400px;
     width: auto;
+    /* float: left; */
   }
 
   .flexAbout {
@@ -442,14 +443,28 @@ h2,
   }
 
   /* porfolio page */
-
   .portfolioProjects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     z-index: 0;
+  }
+
+  .project {
+    width: 100%;
+    height: 400px;
+    padding: 0;
   }
 
   .projectCard {
     width: 300px;
     height: 450px;
+  }
+
+  .projectPage {
+    margin-top: 1%;
+    margin-bottom: 5%;
   }
 
   .carousel-img {
@@ -458,6 +473,7 @@ h2,
 
   .carousel {
     width: 400px;
+    margin-top: 2%;
   }
 
   .carousel-buttons {
@@ -515,7 +531,7 @@ h2,
     justify-content: space-between;
     width: 90vw;
     padding: 0 24px;
-    margin: 32px 0;
+    margin: 24px 0;
   }
 
   .aboutText {
@@ -537,77 +553,6 @@ h2,
   }
 }
 
-@media screen and (max-width: 694px) {
-  /* 
-@media screen and (max-width: 1000px) { */
-  .navRight,
-  .navLeft {
-    font-size: 0.7em;
-  }
-
-  .footer,
-  .footer2 {
-    font-size: smaller;
-  }
-
-  .backgroundImg {
-    /* object-fit: cover; */
-    height: 756px;
-  }
-
-  .portfolioProjects {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .project {
-    width: 100%;
-    height: 400px;
-    padding: 0;
-  }
-
-  .aboutHeader {
-    font-size: 3em;
-  }
-
-  .flexAbout {
-    padding: 0;
-  }
-
-  .aboutText {
-    width: 100%;
-    flex-direction: column;
-  }
-
-  .aboutContainer {
-    margin: 16px;
-  }
-
-  .michelleImg {
-    float: left;
-    padding: 16px;
-  }
-
-  .homeAbout {
-    margin: 16px;
-  }
-
-  .animateText {
-    max-width: 450px;
-  }
-
-  .projectPage {
-    margin-top: 1%;
-    margin-bottom: 5%;
-  }
-
-  .carousel {
-    margin-top: 2%;
-  }
-}
-
 @media screen and (max-width: 1280px) {
   .aboutText {
     width: 100%;
@@ -616,5 +561,19 @@ h2,
 
   .text2 {
     padding-top: 24px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .aboutHeader {
+    font-size: 2.5em;
+  }
+
+  .project-title {
+    font-size: 1.5em;
+  }
+
+  #email {
+    font-size: 0.7em;
   }
 }
