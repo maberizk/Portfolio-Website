@@ -16,12 +16,12 @@ const Homepage = () => {
       <>
         {/* <img src={oceanImg} className="backgroundImg" /> */}
         <About />
-        <Marquee pauseOnHover={true}>
+        <Marquee pauseOnHover={true} speed={70}>
           <h1 className="aboutHeader">WORK</h1>
         </Marquee>
         <Portfolio />
       </>
-      <Marquee pauseOnHover={true}>
+      <Marquee pauseOnHover={true} speed={70}>
         <h1 className="aboutHeader">CONTACT</h1>
       </Marquee>
       <Contact />

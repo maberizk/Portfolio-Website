@@ -9,9 +9,9 @@ export default function Contact() {
       >
         LinkedIn
       </a>
-      <a href="https://www.pinterest.com/meesh129/" className="socialButton">
+      {/* <a href="https://www.pinterest.com/meesh129/" className="socialButton">
         Pinterest
-      </a>
+      </a> */}
       <a
         href="https://github.com/maberizk"
         target="_blank"
@@ -26,9 +26,7 @@ export default function Contact() {
       >
         Resume
       </a>
-      <p id="noBorder">
-        Michelle.aberizk@gmail.com
-      </p>
+      <p id="noBorder">Michelle.aberizk@gmail.com</p>
     </div>
   );
 }
