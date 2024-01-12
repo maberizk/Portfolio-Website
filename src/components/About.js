@@ -12,14 +12,17 @@ export default function About() {
         <div data-aos="fade-right" className="flexAbout">
           <div className="aboutText">
             <p className="text1">
-              I'm a frontend software engineer and UX/UI designer based in Los
+              I am a <span className="bold">frontend software engineer </span> +
+              <span className="bold"> UX/UI designer</span> based in Los
               Angeles.
             </p>
             <p className="text2">
               Transitioning from the physical world as an interior designer to
-              the digital world, I am passionate about design, structure and
-              efficency. I am interested in building responsive components that
-              are functional, beautiful, and interactive.
+              the digital world, I value{" "}
+              <span className="bold">design, structure and efficency. </span> I
+              really like <span className="bold">CSS </span> and building{" "}
+              <span className="bold">responsive components</span> that are
+              functional, beautiful, and interactive.
             </p>
           </div>
         </div>
