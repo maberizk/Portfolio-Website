@@ -305,6 +305,8 @@ body {
   letter-spacing: 0.3em;
   color: black;
   padding-left: 60px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .project-details > p {
