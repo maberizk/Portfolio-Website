@@ -494,6 +494,8 @@ h2,
 
   .project-title {
     padding: 20px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
 
   .carousel-img {
