@@ -249,7 +249,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   flex-direction: column;
-  align-items: normal;
+  align-items: center;
   margin-top: 3%;
   margin-bottom: 5%;
 }
@@ -346,8 +346,22 @@ h2,
 }
 
 .projectLink {
-  text-decoration: none;
+  background-color: #ece7e1;
+  border: 1px solid black;
   color: black;
+  padding: 14px;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  /* margin: 2%; */
+  letter-spacing: 5px;
+  text-decoration: none;
+  text-align: center;
+  width: 200px;
+}
+
+.projectLink:hover {
+  background-color: black;
+  color: #ece7e1;
 }
 
 .carousel-buttons {
@@ -376,6 +390,16 @@ h2,
 
 .indicator-symbol-active {
   color: grey;
+}
+
+.project-images {
+  width: 800px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
 }
 
 /* nav bar  */
@@ -483,8 +507,8 @@ h2,
   }
 
   .projectCard {
-    width: 300px;
-    height: 450px;
+    width: 600px;
+    height: 750px;
   }
 
   .projectPage {
@@ -608,11 +632,20 @@ h2,
     /* margin: 0 20px; */
   }
 
+  .project-images {
+    width: 300px;
+  }
+
   .link {
     font-size: 0.9rem;
   }
 
   #email {
     font-size: 0.7em;
+  }
+
+  .projectCard {
+    width: 300px;
+    height: 450px;
   }
 }

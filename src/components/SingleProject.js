@@ -87,7 +87,7 @@ export default function SingleProject() {
             {project.about}
           </p>
 
-          <p>
+          {/* <p>
             <span className="bold">Link:</span> <br></br>
             <a
               className="projectLink projectText"
@@ -96,27 +96,30 @@ export default function SingleProject() {
             >
               {project.linkTitle}
             </a>
-          </p>
+          </p> */}
         </div>
 
-        {/* <div data-aos="fade-down">
+        <div data-aos="fade-down">
           {project.images.map((image, index) => {
             return (
               <img
-                // className="carousel-img"
+                className="project-images"
                 key={index}
                 src={image}
                 alt={image}
               />
             );
           })}
-        </div> */}
+        </div>
 
-        <div data-aos="fade-left">
+        {/* <div data-aos="fade-left">
           <div style={{ maxWidth: "100vw", overflow: "hidden" }}>
             <Carousel />
           </div>
-        </div>
+        </div> */}
+        <a className="projectLink" target="_blank" href={project.link}>
+          {project.linkTitle}
+        </a>
       </div>
     </div>
   );
