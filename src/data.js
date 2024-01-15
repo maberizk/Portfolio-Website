@@ -6,7 +6,7 @@ export const projects = [
     image: "/images/GoVibe_Cover.png",
     images: [
       "/images/GOVIBE.png",
-      "/images/GOVIBE_2.png",
+      "/images/GoVibe_2.png",
       //   "/images/GoVibe_Inspo.png",
       "/images/GoVibe_Wireframes.png",
     ],
