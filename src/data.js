@@ -49,7 +49,7 @@ export const projects = [
       "/images/TheRanch_5.png",
     ],
     about:
-      "Analyzed and addressed user pain points of existing website to improve engagement and functionality. Created new 'About' and 'Visit' pages, popup to capture user info. Designed wireframes mockups in Figma optimized for a range of devices. Communicated with developer and client to ensure expectations and deadlines were met.",
+      "Analyzed and addressed user pain points of existing website to improve engagement and functionality. Updates included compact navigation, creation of 'About' and 'Visit' pages, popup to capture user info, footer. Designed wireframes mockups in Figma optimized for a range of devices. Communicated with developer and client to ensure expectations and deadlines were met.",
     role: "UX/UI Designer",
     link: "https://theranch.art/",
     linkTitle: "The Ranch Website",
@@ -79,9 +79,10 @@ export const projects = [
     image: "/images/seasonsBloom.png",
     images: [
       "/images/SB_1.png",
-      "/images/SB_2.png",
-      "/images/SB_3.png",
-      "/images/SB_4.png",
+      "/images/SB_screens.png",
+      //   "/images/SB_2.png",
+      //   "/images/SB_3.png",
+      //   "/images/SB_4.png",
     ],
     about:
       "Seasons Bloom strives to give the user a simple and enjoyable flower ordering experience, targeting the unsure occasional buyer as well as a refined, subscription based buyer. Concept forumulated during UX certificate bootcamp - performed competitor research, user journey maps, user personas, wireframes and prototypes in Figma. ",

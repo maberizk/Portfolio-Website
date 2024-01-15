@@ -86,17 +86,6 @@ export default function SingleProject() {
             <span className="bold">Overview:</span> <br></br>
             {project.about}
           </p>
-
-          {/* <p>
-            <span className="bold">Link:</span> <br></br>
-            <a
-              className="projectLink projectText"
-              target="_blank"
-              href={project.link}
-            >
-              {project.linkTitle}
-            </a>
-          </p> */}
         </div>
 
         <div data-aos="fade-down">
@@ -111,12 +100,6 @@ export default function SingleProject() {
             );
           })}
         </div>
-
-        {/* <div data-aos="fade-left">
-          <div style={{ maxWidth: "100vw", overflow: "hidden" }}>
-            <Carousel />
-          </div>
-        </div> */}
         <a className="projectLink" target="_blank" href={project.link}>
           {project.linkTitle}
         </a>

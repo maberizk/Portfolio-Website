@@ -333,8 +333,7 @@ body {
 }
 
 .project-details p,
-h2,
-.projectLink {
+h2 {
   margin: 0;
   padding-bottom: 8px;
   font-size: 1.5rem;
@@ -352,11 +351,13 @@ h2,
   padding: 14px;
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
-  /* margin: 2%; */
+  margin: 3%;
   letter-spacing: 5px;
   text-decoration: none;
   text-align: center;
   width: 200px;
+  font-size: 1.2rem;
+  line-height: 1.4;
 }
 
 .projectLink:hover {
@@ -394,6 +395,7 @@ h2,
 
 .project-images {
   width: 800px;
+  /* width: 70%; */
   height: auto;
   display: flex;
   flex-direction: column;
@@ -522,6 +524,10 @@ h2,
     overflow-wrap: break-word;
   }
 
+  .project-images {
+    width: 600px;
+  }
+
   .carousel-img {
     max-width: 380px;
   }
@@ -558,8 +564,7 @@ h2,
   }
 
   .project-details p,
-  h2,
-  .projectLink {
+  h2 {
     margin: 0;
     padding-bottom: 8px;
     font-size: 1rem;
@@ -647,5 +652,10 @@ h2,
   .projectCard {
     width: 300px;
     height: 450px;
+  }
+
+  .projectLink {
+    font-size: 1rem;
+    line-height: 1.4;
   }
 }
