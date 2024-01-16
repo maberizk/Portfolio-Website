@@ -592,7 +592,7 @@ h2 {
   .contact {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     width: 90vw;
     padding: 0 24px;
     margin: 24px 0;
@@ -638,11 +638,13 @@ h2 {
     word-wrap: break-word;
     overflow-wrap: break-word;
     width: 300px;
+    padding-top: 60px;
     /* margin: 0 20px; */
   }
 
   .project-images {
-    width: 300px;
+    width: 330px;
+    padding: 2% 0;
   }
 
   .link {
