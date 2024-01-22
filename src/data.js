@@ -7,7 +7,6 @@ export const projects = [
     images: [
       "/images/GOVIBE.png",
       "/images/GoVibe_2.png",
-      //   "/images/GoVibe_Inspo.png",
       "/images/GoVibe_Wireframes.png",
     ],
     about:
@@ -27,8 +26,6 @@ export const projects = [
       "/images/Grandad_3.png",
       "/images/Grandad_Wireframes.png",
       "/images/Grandads_Models.png",
-      //   "/images/Grandads_Inspo.png",
-      //   "/images/Grandads_Colors.png",
     ],
     about:
       "Collaborated with a team of 4 on design and development of an end-to-end e-commerce website using the PERN stack. Grandad's Tech sells quality nostalgic tech products, complete with an admin portal to create, edit and delete products. Designed and developed UX/UI design concepts to ensure smooth and visually appealing user experience as well as the product page.",
@@ -44,7 +41,6 @@ export const projects = [
     images: [
       "/images/TheRanch_1_nobg.png",
       "/images/TheRanch_2.png",
-      //   "/images/TheRanch_3.png",
       "/images/TheRanch_4.jpg",
       "/images/TheRanch_5.png",
     ],
@@ -64,7 +60,6 @@ export const projects = [
       "/images/Neighborly_2.jpg",
       "/images/Neighborly_3.jpg",
       "/images/Neighborly_4.jpg",
-      // '/images/Neighborly_5.png',
     ],
     about:
       "Neighborly strives to make it easy for people to find local businesses and build community. Concept forumulated during UX certificate bootcamp - performed competitor research, user journey maps, user personas, wireframes and prototypes in Adobe XD. ",
@@ -80,9 +75,6 @@ export const projects = [
     images: [
       "/images/SB_1.png",
       "/images/SB_screens.png",
-      //   "/images/SB_2.png",
-      //   "/images/SB_3.png",
-      //   "/images/SB_4.png",
     ],
     about:
       "Seasons Bloom strives to give the user a simple and enjoyable flower ordering experience, targeting the unsure occasional buyer as well as a refined, subscription based buyer. Concept forumulated during UX certificate bootcamp - performed competitor research, user journey maps, user personas, wireframes and prototypes in Figma. ",

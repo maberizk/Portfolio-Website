@@ -99,7 +99,6 @@ body {
   justify-content: center;
   align-items: center;
   margin-bottom: 4%;
-  /* padding: 2%; */
 }
 
 /* about page  */
@@ -254,36 +253,6 @@ body {
   margin-bottom: 5%;
 }
 
-.carousel {
-  overflow: hidden;
-  width: 720px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 0 16px;
-}
-
-.inner {
-  white-space: nowrap;
-  height: auto;
-  transition: transform 0.3s;
-  box-shadow: 0 5px 15px rbga(0, 0, 0, 0.05);
-}
-
-.carousel-item {
-  display: inline-flex;
-  align-items: flex-start;
-  justify-content: center;
-}
-
-.carousel-img {
-  width: 700px;
-  height: auto;
-  max-height: 600px;
-  object-fit: scale-down;
-  padding: 0 10px;
-}
-
 .singleProject_info {
   display: flex;
   width: 600px;
@@ -365,37 +334,8 @@ h2 {
   color: #ece7e1;
 }
 
-.carousel-buttons {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.button-arrow,
-.indicator-button {
-  background: none;
-  border: none;
-  cursor: pointer;
-  color: black;
-  margin: 16px 0;
-}
-
-.indicators {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.indicator-symbol {
-  color: black;
-}
-
-.indicator-symbol-active {
-  color: grey;
-}
-
 .project-images {
   width: 800px;
-  /* width: 70%; */
   height: auto;
   display: flex;
   flex-direction: column;
@@ -481,7 +421,6 @@ h2 {
     padding: 16px;
     height: 400px;
     width: auto;
-    /* float: left; */
   }
 
   .flexAbout {
@@ -532,36 +471,6 @@ h2 {
     width: 600px;
   }
 
-  .carousel-img {
-    max-width: 380px;
-  }
-
-  .carousel {
-    width: 400px;
-    margin-top: 2%;
-  }
-
-  .carousel-buttons {
-    display: flex;
-    justify-content: space-evenly;
-  }
-
-  .button-arrow,
-  .indicator-button {
-    background: none;
-    border: none;
-    cursor: pointer;
-    color: black;
-    margin: 16px 0;
-    width: 25px;
-  }
-
-  .indicators {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
-
   .projectTitle {
     padding-right: 16px;
     font-size: 1.5rem;
@@ -583,10 +492,6 @@ h2 {
   .project-details {
     margin: 10px 20px;
     flex-direction: column;
-  }
-
-  .inner {
-    justify-content: flex-start;
   }
 
   .contact {
@@ -639,7 +544,6 @@ h2 {
     overflow-wrap: break-word;
     width: 300px;
     padding-top: 60px;
-    /* margin: 0 20px; */
   }
 
   .project-images {

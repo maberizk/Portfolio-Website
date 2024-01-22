@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "./Navbar";
 import { projects } from "../data";
 import { useParams } from "react-router-dom";
@@ -13,6 +13,10 @@ export default function SingleProject() {
   if (!project) {
     return <div>Project not found</div>;
   }
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [currentProjectId]);
 
   return (
     <div>

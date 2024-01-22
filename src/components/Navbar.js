@@ -10,7 +10,7 @@ const Navbar = ({ currentProjectId }) => {
     <nav data-aos="fade-down" className="navigation">
       <div className="navLeft">
         <h1>
-          <Link to="/" className="link">
+          <Link to="/" className="link" onClick={() => window.scrollTo(0, 0)}>
             <span className={`material-symbols-outlined`}>arrow_back_ios</span>
             HOME
           </Link>
