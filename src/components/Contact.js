@@ -18,7 +18,7 @@ export default function Contact() {
           github
         </a>
         <a
-          href="/Resume_MichelleAberizk.pdf"
+          href="/MichelleAberizk_Resume.pdf"
           target="_blank"
           className="socialButton"
         >
