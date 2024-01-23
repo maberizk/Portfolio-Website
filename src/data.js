@@ -7,10 +7,10 @@ export const projects = [
     images: [
       "/images/GOVIBE.png",
       "/images/GoVibe_2.png",
-      "/images/GoVibe_Wireframes.png",
+      // "/images/GoVibe_Wireframes.png",
     ],
     about:
-      "Simplifies the process of finding activities to do nearby. GoVibe allows the user to create an itinerary that can be shared with friends, or add to a favorite list that is searchable and sortable. I designed and developed splash screen animation, navigation, UX/UI and ensured compliance with ADA guidelines. GoVibe was created with a team of 6 using React Native, CSS, Ruby on Rails and API's.",
+      "GoVibe streamlines the process of finding activities to do nearby. GoVibe allows the user to create an itinerary to share with friends, or add to a favorite list. I designed and developed the splash screen animation, navigation, UX/UI and ensured compliance with ADA guidelines. GoVibe was created with a team of 6 using React Native, CSS, Ruby on Rails and API's.",
     role: "Front-End Developer and UX/UI Designer",
     link: "https://www.youtube.com/watch?v=nXwXDha69TY",
     linkTitle: "GoVibe Trailer",
@@ -28,7 +28,7 @@ export const projects = [
       "/images/Grandads_Models.png",
     ],
     about:
-      "Collaborated with a team of 4 on design and development of an end-to-end e-commerce website using the PERN stack. Grandad's Tech sells quality nostalgic tech products, complete with an admin portal to create, edit and delete products. Designed and developed UX/UI design concepts to ensure smooth and visually appealing user experience as well as the product page.",
+      "Collaborated with a team of 4 on design and development of an end-to-end e-commerce website using the PERN stack. Grandad's Tech sells quality nostalgic tech products, complete with an admin portal to create, edit and delete products. Responible for designing and developing the prooduct page and the UX/UI to ensure a smooth and visually appealing user experience.",
     role: "Fullstack Developer and UX/UI Designer",
     link: "https://graceshopper-ogjq.onrender.com/",
     linkTitle: "Deployed Website",
@@ -45,7 +45,7 @@ export const projects = [
       "/images/TheRanch_5.png",
     ],
     about:
-      "Analyzed and addressed user pain points of existing website to improve engagement and functionality. Updates included compact navigation, creation of 'About' and 'Visit' pages, popup to capture user info, footer. Designed wireframes mockups in Figma optimized for a range of devices. Communicated with developer and client to ensure expectations and deadlines were met.",
+      "Analyzed and addressed user pain points of existing website to improve engagement and functionality. Updates included compact navigation, creation of 'About' and 'Visit' pages, popup to capture user info, and footer. Designed mockups in Figma, optimized for desktop and mobile devices. Communicated with developer and client to ensure expectations and deadlines were met.",
     role: "UX/UI Designer",
     link: "https://theranch.art/",
     linkTitle: "The Ranch Website",
@@ -62,7 +62,7 @@ export const projects = [
       "/images/Neighborly_4.jpg",
     ],
     about:
-      "Neighborly strives to make it easy for people to find local businesses and build community. Concept forumulated during UX certificate bootcamp - performed competitor research, user journey maps, user personas, wireframes and prototypes in Adobe XD. ",
+      "Neighborly makes it easy for people to find and shop at local businesses and build community. Concept forumulated during UX certificate bootcamp - performed competitor research, user journey maps, user personas, wireframes and prototypes in Adobe XD. ",
     role: "UX/UI Designer",
     link: "https://xd.adobe.com/view/f2dd095d-9235-4424-84e3-b2df90550444-a78e/?fullscreen&hints=on",
     linkTitle: "View Prototype",
@@ -72,12 +72,9 @@ export const projects = [
     id: 5,
     description: "UX Design Concept",
     image: "/images/seasonsBloom.png",
-    images: [
-      "/images/SB_1.png",
-      "/images/SB_screens.png",
-    ],
+    images: ["/images/SB_1.png", "/images/SB_screens.png"],
     about:
-      "Seasons Bloom strives to give the user a simple and enjoyable flower ordering experience, targeting the unsure occasional buyer as well as a refined, subscription based buyer. Concept forumulated during UX certificate bootcamp - performed competitor research, user journey maps, user personas, wireframes and prototypes in Figma. ",
+      "Seasons Bloom strives to give the user a simple and enjoyable flower ordering experience, targeting the unsure occasional buyer as well as a refined, subscription based user. Concept forumulated during UX certificate bootcamp - performed competitor research, user journey maps, user personas, wireframes and prototypes in Figma.",
     role: "UX/UI Designer",
     link: "https://www.figma.com/proto/9LXTnyMtr1pvkdNoHrt9d9/FLOWERS?page-id=602%3A202&type=design&node-id=648-650&viewport=670%2C464%2C0.15&t=9hYEK14MAUpnw8Yj-1&scaling=scale-down&starting-point-node-id=648%3A650&mode=design",
     linkTitle: "View Prototype",
@@ -104,7 +101,7 @@ export const projects = [
       "/images/Mos_Lowry2.jpeg",
     ],
     about:
-      "Worked closely with principal interior designer primarily on residential remodels and custom decor projects. Facilitated project management and design of 3-5 projects concurrently, ensuring smooth communication between the woodshop team, vendors, contractors, and clients. Participated in all aspects of the design process such as sending purchase orders, client invoicing, material selection, and drafting - furniture plans, electrical plans, kitchen and bath elevations, and custom furniture details.",
+      "Design and project managed of 3-5 residential projects concurrently, ensuring smooth communication between the woodshop team, vendors, contractors, and clients. Participated in all aspects of the process - sending purchase orders, client invoicing, material selection, and drafting of furniture plans, electrical plans, kitchen and bath elevations, and custom furniture details.",
     role: "Associate Interior Designer and Project Manager",
     link: "https://www.mattersofspace.com/",
     linkTitle: "Matters of Space Website",
@@ -121,7 +118,7 @@ export const projects = [
       "/images/Aberizk_4.jpeg",
     ],
     about:
-      "Remodeled a storage space into an independent designer and vintage store in NYC- maximized display potential, user flow and adhered to ADA standards. Designed the storefront, custom register and clothing racks in collaboration with the owners vision for their first brick and mortar store.",
+      "Remodeled a storage space into an vintage store in NYC- maximized display potential, user flow and adhered to ADA standards. Designed the storefront, custom register and clothing racks to reflect the owners' vision for their first brick and mortar store.",
     role: "Interior Designer",
     link: "https://aberizk.com/",
     linkTitle: "Aberizk Website",
