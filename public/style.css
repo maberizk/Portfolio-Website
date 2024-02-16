@@ -188,6 +188,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.3em;
   color: black;
+  /* padding: 16px; */
 }
 
 .project_image {
@@ -413,7 +414,7 @@ h2 {
     word-wrap: break-word;
     overflow-wrap: break-word;
     width: 300px;
-    padding-top: 60px;
+    padding-top: 70px;
     padding-left: 16px;
   }
 
@@ -427,12 +428,6 @@ h2 {
     padding: 16px;
     width: 100px;
   }
-
-  /* .navigation {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-  } */
 
   #email {
     font-size: 0.7em;
@@ -492,9 +487,6 @@ h2 {
     justify-content: start;
     flex-direction: column;
   }
-  /* .navRight {
-    width: 200px;
-  } */
 
   .projectPage {
     width: 100%;
@@ -660,15 +652,34 @@ h2 {
   .about {
     padding: 0;
   }
+
+  .projectLink {
+    margin-bottom: 100px;
+  }
 }
 
 /* Small Laptops/Large Tablets */
-@media screen and (max-width: 1024px) {
-  /* Styles */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .projectCard {
+    padding: 16px;
+  }
+
+  .project-title {
+    padding-top: 60px;
+    font-size: 2em;
+  }
+
+  .project-details {
+    margin: 0;
+  }
+
+  .projectLink {
+    margin-bottom: 300px;
+  }
 }
 
 /* desktops */
-@media screen and (min-width: 769px) and (max-width: 1280px) {
+@media screen and (max-width: 1280px) {
   .aboutText {
     width: 100%;
     flex-direction: column;
@@ -678,41 +689,3 @@ h2 {
     padding-top: 24px;
   }
 }
-/* 
-@media screen and (max-width: 390px) {
-  .aboutHeader {
-    font-size: 2.5em;
-  }
-
-  .project-title {
-    font-size: 1.3em;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    width: 300px;
-    padding-top: 60px;
-  }
-
-  .project-images {
-    width: 330px;
-    padding: 2% 0;
-  }
-
-  .link {
-    font-size: 0.9rem;
-  }
-
-  #email {
-    font-size: 0.7em;
-  }
-
-  .projectCard {
-    width: 300px;
-    height: 450px;
-    padding-top: 16px
-  }
-
-  .projectLink {
-    font-size: 1rem;
-    line-height: 1.4;
-  }
-} */
