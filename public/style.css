@@ -9,6 +9,11 @@ body {
 * {
   margin: 0;
   padding: 0;
+  /* width: 100vw; */
+}
+
+.app {
+  width: 100vw;
 }
 
 .error {
@@ -366,7 +371,79 @@ h2 {
 }
 /* responsive web  */
 
-@media screen and (max-width: 694px) {
+/* mobile */
+@media screen and (max-width: 480px) {
+  * {
+    width: 100vw;
+  }
+  .about {
+    padding: 32px 16px;
+    width: 100%;
+    max-width: 400px;
+  }
+  .aboutHeader {
+    font-size: 2.5em;
+  }
+
+  .aboutContainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* width: 90%; */
+  }
+
+  .aboutText {
+    width: 100%;
+    flex-direction: column;
+    /* padding: 8px; */
+  }
+
+  .project-title {
+    font-size: 1.3em;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    width: 300px;
+    padding-top: 60px;
+  }
+
+  .project-images {
+    width: 330px;
+    padding: 2% 0;
+  }
+
+  .link {
+    font-size: 0.9rem;
+  }
+
+  #email {
+    font-size: 0.7em;
+    display: flex;
+    justify-content: center;
+  }
+
+  .projectCard {
+    width: 300px;
+    height: 450px;
+    padding-top: 16px;
+  }
+
+  .projectLink {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+
+  .contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90vw;
+    padding: 0 24px;
+    margin: 24px 0;
+  }
+}
+
+/* tablets */
+@media screen and (min-width: 481px) and (max-width: 768px) {
   /* nav */
   .navigation {
     display: flex;
@@ -411,10 +488,6 @@ h2 {
   .aboutText {
     width: 100%;
     flex-direction: column;
-  }
-
-  .aboutContainer {
-    margin: 16px;
   }
 
   .michelleImg {
@@ -498,7 +571,7 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 90vw;
+    /* width: 90vw; */
     padding: 0 24px;
     margin: 24px 0;
   }
@@ -522,7 +595,13 @@ h2 {
   }
 }
 
-@media screen and (max-width: 1280px) {
+/* Small Laptops/Large Tablets */
+@media screen and (max-width: 1024px) {
+  /* Styles */
+}
+
+/* desktops */
+@media screen and (min-width: 769px) and (max-width: 1280px) {
   .aboutText {
     width: 100%;
     flex-direction: column;
@@ -532,7 +611,7 @@ h2 {
     padding-top: 24px;
   }
 }
-
+/* 
 @media screen and (max-width: 390px) {
   .aboutHeader {
     font-size: 2.5em;
@@ -562,10 +641,11 @@ h2 {
   .projectCard {
     width: 300px;
     height: 450px;
+    padding-top: 16px
   }
 
   .projectLink {
     font-size: 1rem;
     line-height: 1.4;
   }
-}
+} */
