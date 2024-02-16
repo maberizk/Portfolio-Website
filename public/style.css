@@ -379,7 +379,6 @@ h2 {
 
   .about {
     padding: 32px 16px;
-    /* width: 100%; */
     max-width: 400px;
   }
 
@@ -392,14 +391,11 @@ h2 {
     flex-direction: column;
     flex-wrap: wrap;
     width: 400px;
-    /* width: 90%; */
   }
 
   .aboutText {
-    /* width: 200px; */
     display: flex;
     flex-direction: column;
-    /* padding: 8px; */
   }
 
   .text1 {
@@ -418,6 +414,7 @@ h2 {
     overflow-wrap: break-word;
     width: 300px;
     padding-top: 60px;
+    padding-left: 16px;
   }
 
   .project-images {
@@ -427,7 +424,15 @@ h2 {
 
   .link {
     font-size: 0.9rem;
+    padding: 16px;
+    width: 100px;
   }
+
+  /* .navigation {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  } */
 
   #email {
     font-size: 0.7em;
@@ -456,18 +461,50 @@ h2 {
     margin: 24px 0;
   }
 
-  .michelleImgContainer {
-    flex: 1;
-    /* padding-left: 16px; */
-    z-index: 0;
-  }
-
   .michelleImg {
     width: 100%;
     height: 20%;
     object-fit: cover;
     transition: all 1s;
     max-width: 600px;
+  }
+  .project-details {
+    margin: 0;
+    flex-direction: column;
+  }
+
+  .project-details p,
+  h2 {
+    margin: 0;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    font-size: 1.2rem;
+    line-height: 1.4;
+  }
+
+  .projectText {
+    width: 90%;
+  }
+
+  .navLeft {
+    width: 65vw;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+  }
+  /* .navRight {
+    width: 200px;
+  } */
+
+  .projectPage {
+    width: 100%;
+    justify-content: center;
+  }
+  .images {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -545,6 +582,7 @@ h2 {
     justify-content: center;
     align-items: center;
     z-index: 0;
+    /* max-width: 450px; */
   }
 
   .project {
