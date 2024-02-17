@@ -630,7 +630,6 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    /* width: 90vw; */
     padding: 0 24px;
     margin: 24px 0;
   }
@@ -665,7 +664,8 @@ h2 {
   }
 
   .project-title {
-    padding-top: 60px;
+    /* padding-top: 60px; */
+    padding: 20px;
     font-size: 2em;
   }
 
@@ -688,4 +688,7 @@ h2 {
   .text2 {
     padding-top: 24px;
   }
+}
+
+@media screen and (min-width: 1281px) {
 }
