@@ -423,7 +423,8 @@ h2 {
 
   .project-images {
     width: 330px;
-    padding: 2% 0;
+    padding: 2% 2%;
+    justify-content: center;
   }
 
   .link {
@@ -667,6 +668,10 @@ h2 {
     padding: 16px;
   }
 
+  .aboutText {
+    width: 90vw;
+  }
+
   .project-title {
     /* padding-top: 60px; */
     padding: 32px;
@@ -681,6 +686,13 @@ h2 {
     margin: 10px 32px;
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  .aboutContainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 400px;
   }
 
   .projectLink {
