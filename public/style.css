@@ -354,7 +354,7 @@ h2 {
 .navigation {
   display: flex;
   justify-content: space-between;
-  margin-top: 24px;
+  /* margin-top: 24px; */
   position: fixed;
   width: 100%;
   top: 0;
