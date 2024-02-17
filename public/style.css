@@ -424,7 +424,10 @@ h2 {
   .project-images {
     width: 330px;
     padding: 2% 2%;
+    display: flex;
     justify-content: center;
+    align-items: center;
+    margin: auto;
   }
 
   .link {
