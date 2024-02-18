@@ -37,7 +37,7 @@ export default function SingleProject() {
           </p>
         </div>
 
-        <div data-aos="fade-down">
+        <div data-aos="fade-down" className="images">
           {project.images.map((image, index) => {
             return (
               <img
