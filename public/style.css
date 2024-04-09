@@ -376,6 +376,12 @@ h2 {
 @media screen and (max-width: 480px) {
   * {
     width: 100vw;
+    max-width: 100%;
+    /* overflow-x: hidden; */
+  }
+  .home {
+    max-width: 100%;
+    overflow-x: hidden;
   }
 
   .about {
@@ -397,6 +403,10 @@ h2 {
   .aboutText {
     display: flex;
     flex-direction: column;
+  }
+
+  .flexAbout {
+    width: 90%;
   }
 
   .text1 {

@@ -7,7 +7,7 @@ import Contact from "./Contact";
 
 const Homepage = () => {
   return (
-    <>
+    <div className="home">
       <>
         <About />
         <Marquee pauseOnHover={true} speed={70}>
@@ -19,7 +19,7 @@ const Homepage = () => {
         <h1 className="aboutHeader">CONTACT</h1>
       </Marquee>
       <Contact />
-    </>
+    </div>
   );
 };
 
