@@ -6,6 +6,11 @@ body {
   background-color: #ece7e1;
 }
 
+@font-face {
+  font-family: tan meringue;
+  src: url(TAN\ MERINGUE.otf);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -370,6 +375,15 @@ h2 {
   display: flex;
   letter-spacing: 0.3rem;
 }
+
+.logo {
+  font-family: tan meringue;
+}
+
+.navRight > h3 {
+  padding-right: 20%;
+}
+
 /* responsive web  */
 
 /* mobile */
