@@ -16,12 +16,13 @@ export default function About() {
               <span className="bold"> UX designer</span> based in Los Angeles.
             </p>
             <p className="text2">
-              I am currently specializing in{" "}
-              <span className="bold">Squarespace </span> marketing websites and
-              <span className="bold"> Shopify </span> e-commerce websites -
-              providing initial store development, design refreshes and updating
-              themes.
-            </p>
+              Transitioning from the physical world as an interior designer to
+              the digital world, I value{" "}
+              <span className="bold">design, structure and efficency. </span> I
+              really like <span className="bold">CSS </span> and building{" "}
+              <span className="bold">responsive components</span> that are
+              functional, beautiful, and interactive.
+              </p>
           </div>
         </div>
         <div data-aos="fade-down" className="michelleImgContainer">
