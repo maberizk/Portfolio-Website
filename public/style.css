@@ -79,6 +79,24 @@ body {
   color: #ece7e1;
 }
 
+.socialButton2 {
+  background-color: #ece7e1;
+  border: 1px solid black;
+  color: black;
+  padding: 14px 32px;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  margin-top: 5%;
+  letter-spacing: 5px;
+  text-decoration: none;
+  width: 200px;
+}
+
+.socialButton2:hover {
+  background-color: black;
+  color: #ece7e1;
+}
+
 #email {
   color: black;
   padding: 14px 32px;

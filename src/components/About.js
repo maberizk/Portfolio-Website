@@ -15,14 +15,27 @@ export default function About() {
               I am a <span className="bold">frontend software engineer </span> +
               <span className="bold"> UX designer</span> based in Los Angeles.
             </p>
-            <p className="text2">
+            {/* <p className="text2">
               Transitioning from the physical world as an interior designer to
               the digital world, I value{" "}
               <span className="bold">design, structure and efficency. </span> I
               really like <span className="bold">CSS </span> and building{" "}
               <span className="bold">responsive components</span> that are
               functional, beautiful, and interactive.
+              </p> */}
+              <p className="text2">
+              Having transitioned from the physical world as an interior designer to
+              the digital world, I value{" "}
+              <span className="bold">structure and efficency. </span> I
+               love <span className="bold">CSS </span> and building{" "}
+              <span className="bold">responsive components</span> that are
+              functional, beautiful, and interactive.
               </p>
+              <br></br>
+              <p>I created my own studio, Part Time Design, where I design and develop custom Shopify and Squarespace websites.</p>
+              <a href="https://www.part-time-design.com/"   target="_blank"
+          className="socialButton2"> view more</a>
+
           </div>
         </div>
         <div data-aos="fade-down" className="michelleImgContainer">
