@@ -32,9 +32,6 @@ export default function About() {
               functional, beautiful, and interactive.
               </p>
               <br></br>
-              <p>I created my own studio, Part Time Design, where I design and develop custom Shopify and Squarespace websites.</p>
-              <a href="https://www.part-time-design.com/"   target="_blank"
-          className="socialButton2"> view more</a>
 
           </div>
         </div>
