@@ -13,7 +13,7 @@ export default function About() {
           <div className="aboutText">
             <p className="text1">
               I am a <span className="bold">frontend software engineer </span> +
-              <span className="bold"> UX designer</span> based in Los Angeles.
+              <span className="bold"> UX designer</span> based in Oakland, CA.
             </p>
             {/* <p className="text2">
               Transitioning from the physical world as an interior designer to
