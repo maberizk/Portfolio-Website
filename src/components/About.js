@@ -32,7 +32,7 @@ export default function About() {
               functional, beautiful, and interactive.
               </p>
               <br></br>
-              <p>I created <a className="linktwo bold" href="https://www.part-time-design.com/" target="_blank">Part Time Design</a>, a studio where I design and develop custom Shopify and Squarespace websites.</p>   <a className="linktwo" href="https://www.part-time-design.com/" target="_blank">View More</a>
+              <p>I created <a className="linktwo bold" href="https://www.part-time-design.com/" target="_blank">Part Time Design</a>, a studio where I design and develop custom Shopify and Squarespace websites.   <a className="linktwo" href="https://www.part-time-design.com/" target="_blank">View More</a></p>
 
           </div>
         </div>
