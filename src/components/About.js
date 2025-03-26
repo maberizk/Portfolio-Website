@@ -23,17 +23,36 @@ export default function About() {
               <span className="bold">responsive components</span> that are
               functional, beautiful, and interactive.
               </p> */}
-              <p className="text2">
-              Having transitioned from the physical world as an interior designer to
-              the digital world, I value{" "}
-              <span className="bold">structure and efficency. </span> I
-               love <span className="bold">CSS </span> and building{" "}
+            <p className="text2">
+              Having transitioned from the physical world as an interior
+              designer to the digital world, I value{" "}
+              <span className="bold">structure and efficency. </span> I love{" "}
+              <span className="bold">CSS </span> and building{" "}
               <span className="bold">responsive components</span> that are
               functional, beautiful, and interactive.
-              </p>
-              <br></br>
-              <p>I created <a className="linktwo bold" href="https://www.part-time-design.com/" target="_blank">Part Time Design</a>, a studio where I design and develop custom Shopify and Squarespace websites.   <a className="linktwo" href="https://www.part-time-design.com/" target="_blank">View More</a></p>
-
+            </p>
+            <br></br>
+            <p>
+              I created{" "}
+              <a
+                className="linktwo bold"
+                href="https://www.part-time-design.com/"
+                target="_blank"
+              >
+                Part Time Design
+              </a>
+              , a studio where I design and develop custom Shopify and
+              Squarespace websites.
+            </p>
+            <p>
+              <a
+                className="linkthree"
+                href="https://www.part-time-design.com/"
+                target="_blank"
+              >
+                View More
+              </a>
+            </p>
           </div>
         </div>
         <div data-aos="fade-down" className="michelleImgContainer">
