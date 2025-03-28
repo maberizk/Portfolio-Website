@@ -99,6 +99,11 @@ export const projects = [
       "/images/Mos_Oxy3.png",
       "/images/Mos_Lowry1.jpg",
       "/images/Mos_Lowry2.jpg",
+      "/images/Mos_Lowry3.jpg",
+      "/images/Mos_Lowry4.jpg",
+      "/images/Mos_Lowry5.jpg",
+      "/images/Mos_Lowry6.png",
+      "/images/Mos_Lowry7.png",
     ],
     about:
       "Design and project managed of 3-5 residential projects concurrently, ensuring smooth communication between the woodshop team, vendors, contractors, and clients. Participated in all aspects of the process - sending purchase orders, client invoicing, material selection, and drafting of furniture plans, electrical plans, kitchen and bath elevations, and custom furniture details.",
