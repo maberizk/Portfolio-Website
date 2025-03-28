@@ -1,41 +1,24 @@
 export const projects = [
   {
-    title: "GoVibe",
+    title: "Aberizk Website",
     id: 1,
-    description: "App Concept",
-    image: "/images/GoVibe_Cover.png",
+    description: "Website Design and Development",
+    image: "/images/AberizkWebsite_1.png",
     images: [
-      "/images/GOVIBE.png",
-      "/images/GoVibe_2.png",
-      // "/images/GoVibe_Wireframes.png",
+      "/images/AberizkWebsite_2.jpg",
+      "/images/AberizkWebsite_3.jpg",
+      "/images/AberizkWebsite_4.png",
+      "/images/AberizkWebsite_1.png",
     ],
     about:
-      "GoVibe streamlines the process of finding activities to do nearby. GoVibe allows the user to create an itinerary to share with friends, or add to a favorite list. I designed and developed the splash screen animation, navigation, UX/UI and ensured compliance with ADA guidelines. GoVibe was created with a team of 6 using React Native, CSS, Ruby on Rails and API's.",
-    role: "Front-End Developer and UX/UI Designer",
-    link: "https://www.youtube.com/watch?v=nXwXDha69TY",
-    linkTitle: "GoVibe Trailer",
-  },
-  {
-    title: "Grandad's Tech",
-    id: 2,
-    description: "E-Commerce Website",
-    image: "/images/Grandad_cover.png",
-    images: [
-      "/images/Grandad_1.png",
-      "/images/Grandad_2.png",
-      "/images/Grandad_3.png",
-      "/images/Grandad_Wireframes.png",
-      "/images/Grandads_Models.png",
-    ],
-    about:
-      "Collaborated with a team of 4 on design and development of an end-to-end e-commerce website using the PERN stack. Grandad's Tech sells quality nostalgic tech products, complete with an admin portal to create, edit and delete products. Responible for designing and developing the prooduct page and the UX/UI to ensure a smooth and visually appealing user experience.",
-    role: "Fullstack Developer and UX/UI Designer",
-    link: "https://graceshopper-ogjq.onrender.com/",
-    linkTitle: "Deployed Website",
+      "Shopify Website Refresh. Updated navigation, footer and PDP to maximize conversion and sales. Added Archives section and reimagined press page. Designed Editorial pages to showcase photoshoots and content creation. Custom code to minimize workflow for owner. Mobile Responsive and ADA compliant",
+    role: "UX/ UI Designer and Frontend Developer",
+    link: "https://aberizk.com/",
+    linkTitle: "Aberizk Website",
   },
   {
     title: "The Ranch",
-    id: 3,
+    id: 2,
     description: "UX / UI Design Update",
     image: "/images/TheRanch_4.jpg",
     images: [
@@ -51,8 +34,44 @@ export const projects = [
     linkTitle: "The Ranch Website",
   },
   {
-    title: "Neighborly",
+    title: "GoVibe",
+    id: 3,
+    description: "App Concept",
+    image: "/images/GoVibe_Cover.png",
+    images: [
+      "/images/GOVIBE.png",
+      "/images/GoVibe_2.png",
+      // "/images/GoVibe_Wireframes.png",
+    ],
+    about:
+      "GoVibe streamlines the process of finding activities to do nearby. GoVibe allows the user to create an itinerary to share with friends, or add to a favorite list. I designed and developed the splash screen animation, navigation, UX/UI and ensured compliance with ADA guidelines. GoVibe was created with a team of 6 using React Native, CSS, Ruby on Rails and API's.",
+    role: "Front-End Developer and UX/UI Designer",
+    link: "https://www.youtube.com/watch?v=nXwXDha69TY",
+    linkTitle: "GoVibe Trailer",
+  },
+
+  {
+    title: "Grandad's Tech",
     id: 4,
+    description: "E-Commerce Website",
+    image: "/images/Grandad_cover.png",
+    images: [
+      "/images/Grandad_1.png",
+      "/images/Grandad_2.png",
+      "/images/Grandad_3.png",
+      "/images/Grandad_Wireframes.png",
+      "/images/Grandads_Models.png",
+    ],
+    about:
+      "Collaborated with a team of 4 on design and development of an end-to-end e-commerce website using the PERN stack. Grandad's Tech sells quality nostalgic tech products, complete with an admin portal to create, edit and delete products. Responible for designing and developing the prooduct page and the UX/UI to ensure a smooth and visually appealing user experience.",
+    role: "Fullstack Developer and UX/UI Designer",
+    link: "https://graceshopper-ogjq.onrender.com/",
+    linkTitle: "Deployed Website",
+  },
+
+  {
+    title: "Neighborly",
+    id: 5,
     description: "UX Design Concept",
     image: "/images/neighborlyHome.jpg",
     images: [
@@ -69,7 +88,7 @@ export const projects = [
   },
   {
     title: "Seasons Bloom",
-    id: 5,
+    id: 6,
     description: "UX Design Concept",
     image: "/images/seasonsBloom.png",
     images: ["/images/SB_1.png", "/images/SB_screens.png"],
@@ -81,7 +100,7 @@ export const projects = [
   },
   {
     title: "Matters of Space",
-    id: 6,
+    id: 7,
     description: "Interior Design",
     image: "/images/Mos_Bonita2.jpg",
     images: [
@@ -113,7 +132,7 @@ export const projects = [
   },
   {
     title: "Aberizk Store",
-    id: 7,
+    id: 8,
     description: "Interior Design",
     image: "/images/Aberizk_2.jpeg",
     images: [
@@ -128,4 +147,5 @@ export const projects = [
     link: "https://aberizk.com/",
     linkTitle: "Aberizk Website",
   },
+
 ];
