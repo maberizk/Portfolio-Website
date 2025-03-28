@@ -12,8 +12,8 @@ export default function About() {
         <div data-aos="fade-right" className="flexAbout">
           <div className="aboutText">
             <p className="text1">
-              I am a <span className="bold">frontend software engineer </span> +
-              <span className="bold"> UX designer</span> based in Oakland, CA.
+              I am a <span className="bold">website designer</span> +
+              <span className="bold"> frontend developer</span> based in Oakland, CA.
             </p>
             {/* <p className="text2">
               Transitioning from the physical world as an interior designer to
@@ -26,10 +26,9 @@ export default function About() {
             <p className="text2">
               Having transitioned from the physical world as an interior
               designer to the digital world, I value{" "}
-              <span className="bold">structure and efficency. </span> I love{" "}
-              <span className="bold">CSS </span> and building{" "}
-              <span className="bold">responsive components</span> that are
-              functional, beautiful, and interactive.
+              <span className="bold">structure and efficency. </span> I love styling websites with{" "}
+              <span className="bold">CSS </span> and ensuring{" "}
+              <span className="bold">maximum usability</span>  for a smooth and enjoyable user experience. 
             </p>
             <br></br>
             <p>
