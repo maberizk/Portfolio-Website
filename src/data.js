@@ -8,10 +8,11 @@ export const projects = [
       "/images/AberizkWebsite_2.jpg",
       "/images/AberizkWebsite_3.jpg",
       "/images/AberizkWebsite_4.png",
+      "/images/AberizkWebsite_5.jpg",
       "/images/AberizkWebsite_1.png",
     ],
     about:
-      "Shopify Website Refresh. Updated navigation, footer and PDP to maximize conversion and sales. Added Archives section and reimagined press page. Designed Editorial pages to showcase photoshoots and content creation. Custom code to minimize workflow for owner. Mobile Responsive and ADA compliant",
+      "Shopify Website Refresh and updated to latest version. Updated navigation, footer and PDP to maximize conversion and sales. Added 'Archives' page and reimagined 'Press' and 'Contact' page. Designed Editorial pages to showcase photoshoots and content creation. Custom code to minimize workflow for owner. Mobile Responsive and ADA compliant",
     role: "UX/ UI Designer and Frontend Developer",
     link: "https://aberizk.com/",
     linkTitle: "Aberizk Website",
@@ -147,5 +148,4 @@ export const projects = [
     link: "https://aberizk.com/",
     linkTitle: "Aberizk Website",
   },
-
 ];
