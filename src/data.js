@@ -35,8 +35,27 @@ export const projects = [
     linkTitle: "The Ranch Website",
   },
   {
-    title: "GoVibe",
+    title: "Hawaii Swim Collective",
     id: 3,
+    description: "Website Design and Development",
+    image: "/images/HawaiiSwim_1.png",
+    images: [
+      "/images/HawaiiSwim_2.jpg",
+      "/images/HawaiiSwim_3.jpg",
+      "/images/HawaiiSwim_4.jpg",
+      "/images/HawaiiSwim_5.jpg",
+      "/images/HawaiiSwim_6.jpg",
+      "/images/HawaiiSwim_1.png",
+    ],
+    about:
+      "Initiated Shopify store - developing and designing all aspects to launch including Home Page, PDP's, FAQ, About Us, Contact. Set up shipping, created Favicon, coded custom inputs.",
+    role: "UX/ UI Designer and Frontend Developer",
+    link: "https://hawaiiswimcollective.com/",
+    linkTitle: "Hawaii Swim Collective Website",
+  },
+  {
+    title: "GoVibe",
+    id: 4,
     description: "App Concept",
     image: "/images/GoVibe_Cover.png",
     images: [
@@ -53,7 +72,7 @@ export const projects = [
 
   {
     title: "Grandad's Tech",
-    id: 4,
+    id: 5,
     description: "E-Commerce Website",
     image: "/images/Grandad_cover.png",
     images: [
@@ -72,7 +91,7 @@ export const projects = [
 
   {
     title: "Neighborly",
-    id: 5,
+    id: 6,
     description: "UX Design Concept",
     image: "/images/neighborlyHome.jpg",
     images: [
@@ -89,7 +108,7 @@ export const projects = [
   },
   {
     title: "Seasons Bloom",
-    id: 6,
+    id: 7,
     description: "UX Design Concept",
     image: "/images/seasonsBloom.png",
     images: ["/images/SB_1.png", "/images/SB_screens.png"],
@@ -101,7 +120,7 @@ export const projects = [
   },
   {
     title: "Matters of Space",
-    id: 7,
+    id: 8,
     description: "Interior Design",
     image: "/images/Mos_Bonita2.jpg",
     images: [
@@ -133,7 +152,7 @@ export const projects = [
   },
   {
     title: "Aberizk Store",
-    id: 8,
+    id: 9,
     description: "Interior Design",
     image: "/images/Aberizk_2.jpeg",
     images: [
