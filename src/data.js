@@ -2,7 +2,7 @@ export const projects = [
   {
     title: "Aberizk Website",
     id: 1,
-    description: "Website Design and Development",
+    description: "Shopify Design and Development",
     image: "/images/AberizkWebsite_1.png",
     images: [
       "/images/AberizkWebsite_2.jpg",
@@ -37,7 +37,7 @@ export const projects = [
   {
     title: "Hawaii Swim Collective",
     id: 3,
-    description: "Website Design and Development",
+    description: "Shopify Design and Development",
     image: "/images/HawaiiSwim_1.png",
     images: [
       "/images/HawaiiSwim_2.jpg",
