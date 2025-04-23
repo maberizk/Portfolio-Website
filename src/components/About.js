@@ -13,7 +13,8 @@ export default function About() {
           <div className="aboutText">
             <p className="text1">
               I am a <span className="bold">website designer</span> +
-              <span className="bold"> frontend developer</span> based in Oakland, CA.
+              <span className="bold"> frontend developer</span> based in
+              Oakland, CA.
             </p>
             {/* <p className="text2">
               Transitioning from the physical world as an interior designer to
@@ -26,11 +27,12 @@ export default function About() {
             <p className="text2">
               Having transitioned from the physical world as an interior
               designer to the digital world, I value{" "}
-              <span className="bold">structure and efficency. </span> I love styling websites with{" "}
-              <span className="bold">CSS </span> and ensuring{" "}
-              <span className="bold">maximum usability</span>  for a smooth and enjoyable user experience. 
+              <span className="bold">structure and efficency. </span> I love
+              styling websites with <span className="bold">CSS </span> and
+              ensuring <span className="bold">maximum usability</span> for a
+              smooth and enjoyable user experience.
             </p>
-            <br></br>
+            {/* <br></br>
             <p>
               I created{" "}
               <a
@@ -42,8 +44,8 @@ export default function About() {
               </a>
               , a studio where I design and develop custom Shopify and
               Squarespace websites.
-            </p>
-            <p>
+            </p> */}
+            {/* <p>
               <a
                 className="linkthree"
                 href="https://www.part-time-design.com/"
@@ -51,7 +53,7 @@ export default function About() {
               >
                 View More
               </a>
-            </p>
+            </p> */}
           </div>
         </div>
         <div data-aos="fade-down" className="michelleImgContainer">
