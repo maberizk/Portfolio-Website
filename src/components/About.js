@@ -11,11 +11,11 @@ export default function About() {
       <div className="aboutContainer">
         <div data-aos="fade-right" className="flexAbout">
           <div className="aboutText">
-            <p className="text1">
+            {/* <p className="text1">
               I am a <span className="bold">website designer</span> +
               <span className="bold"> frontend developer</span> based in
               Oakland, CA.
-            </p>
+            </p> */}
             {/* <p className="text2">
               Transitioning from the physical world as an interior designer to
               the digital world, I value{" "}
