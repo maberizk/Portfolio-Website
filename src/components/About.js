@@ -24,14 +24,14 @@ export default function About() {
               <span className="bold">responsive components</span> that are
               functional, beautiful, and interactive.
               </p> */}
-            <p className="text2">
+            {/* <p className="text2">
               Having transitioned from the physical world as an interior
               designer to the digital world, I value{" "}
               <span className="bold">structure and efficency. </span> I love
               styling websites with <span className="bold">CSS </span> and
               ensuring <span className="bold">maximum usability</span> for a
               smooth and enjoyable user experience.
-            </p>
+            </p> */}
             {/* <br></br>
             <p>
               I created{" "}
